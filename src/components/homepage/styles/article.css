@@ -1,10 +1,13 @@
 @import "../../../data/styles.css";
 
 .homepage-article {
-	width: 90%;
+	width: 100%;
 	mix-blend-mode: normal;
 	border-radius: 20px;
 	opacity: 0.8;
+	background-color: var(--color-gray-800);
+	margin-bottom: 20px;
+	padding-bottom: 0px;
 }
 
 .homepage-article > a {
@@ -13,7 +16,6 @@
 }
 
 .homepage-article:hover {
-	background: #fafafa;
 	opacity: 1;
 	transition: background-color 0.3s ease-in-out;
 }
@@ -44,12 +46,17 @@
 	line-height: 1.5;
 }
 
+.homepage-article:hover .homepage-article-link {
+	color: var(--link-color);
+	transition: color 0.3s ease-in-out;
+}
+
 .homepage-article-link {
 	opacity: 1;
 	padding-top: 20px;
 	font-size: 15px;
 	font-weight: 700;
-	color: var(--link-color);
+	color: var(--secondary-color);
 }
 
 .homepage-article-link a {

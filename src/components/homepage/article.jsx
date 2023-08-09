@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import { Tilt } from "react-tilt";
 
 import "./styles/article.css";
 
@@ -10,7 +11,7 @@ const Article = (props) => {
 	const { title, description, date, link } = props;
 
 	return (
-		<React.Fragment>
+		<Tilt className="Tilt" options={{ reverse: true, max: 25, scale: 1 }}>
 			<div className="homepage-article">
 				<Link to={link} target="_blank" rel="noopener noreferrer">
 					<div className="homepage-article-content">
@@ -31,7 +32,7 @@ const Article = (props) => {
 					</div>
 				</Link>
 			</div>
-		</React.Fragment>
+		</Tilt>
 	);
 };
 

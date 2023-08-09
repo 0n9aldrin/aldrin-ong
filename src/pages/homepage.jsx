@@ -122,7 +122,7 @@ const Homepage = () => {
 								<div className="homepage-image-container">
 									<div className="homepage-image-wrapper">
 										<img
-											src={`${process.env.PUBLIC_URL}/homepage.jpg`}
+											src={process.env.PUBLIC_URL + '/homepage.jpg'}
 											alt="about"
 											className="homepage-image"
 										/>
@@ -198,10 +198,13 @@ const Homepage = () => {
 						<div className="homepage-works">
 							<Works />
 						</div>
+						<h2 className="blogs-title">
+							Blogs
+						</h2>
 						<div className="homepage-articles">
 							{myArticles.map((article, index) => (
 								<div
-									className="homepage-article"
+									className="homepage-article-wrapper"
 									key={(index + 1).toString()}
 								>
 									<Article

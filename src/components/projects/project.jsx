@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
-import { Tilt } from "react-tilt"; // Use named import instead
+import { Tilt } from "react-tilt";
 
 import "./styles/project.css";
 
@@ -12,7 +12,7 @@ const Project = (props) => {
 	return (
 		<Tilt
 			className="Tilt"
-			options={{ reverse: true, max: 25, scale: 0.95 }}
+			options={{ reverse: true, max: 25, scale: 1 }}
 		>
 			<div className="project">
 				<Link to={link} target="_blank" rel="noopener noreferrer">
