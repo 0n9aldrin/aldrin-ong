@@ -79,39 +79,48 @@ const INFO = {
 		},
 
 		{
-			title: "Project 2",
+			title: "TMDB Declarative UI",
 			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
+				"An internship project implemented using Jetpack Compose to display popular movies using The Movie Database API.",
+			logo: "https://developer.android.com/static/images/logos/android.svg",
+			linkText: "View Project",
+			link: "https://github.com/0n9aldrin/tmdb-declarative-ui",
+		},
+
+		{
+			title: "Price Comparison App",
+			description:
+				"A Flutter app that compares the prices of 5 Indonesian e-commerce websites using web scraping and hidden endpoints.",
+			logo: "https://cdn.iconscout.com/icon/free/png-512/free-flutter-2038877-1720090.png?f=avif&w=512",
+			linkText: "View Project",
+			link: "https://github.com/0n9aldrin/price-comparison",
+		},
+
+		{
+			title: "Machine Learning Research Paper",
+			description:
+				"To what extent can supervised ML algorithms — ANNs and SVMs — be used to predict football matches in the Premier League?",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
 			linkText: "View Project",
-			link: "https://github.com",
+			link: "research.pdf",
 		},
 
 		{
-			title: "Project 3",
+			title: "Two Wish",
 			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/html/html.png",
+				"A customer side Flutter app of the TwoWish.jkt company that allows users to donate and contact various organisations that need donations. ",
+			logo: "https://cdn.iconscout.com/icon/free/png-512/free-flutter-2038877-1720090.png?f=avif&w=512",
 			linkText: "View Project",
-			link: "https://github.com",
+			link: "https://github.com/0n9aldrin/2wish",
 		},
 
 		{
-			title: "Project 4",
+			title: "Trainme",
 			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
+				"An android app that connects Indonesian tennis coaches with students and is a one-stop platform for tennis enthusiasts.",
+			logo: `${process.env.PUBLIC_URL}/trainme.png`,
 			linkText: "View Project",
-			link: "https://github.com",
-		},
-
-		{
-			title: "Project 5",
-			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
-			linkText: "View Project",
-			link: "https://github.com",
+			link: "https://github.com/0n9aldrin/trainme-frontend",
 		},
 	],
 };
