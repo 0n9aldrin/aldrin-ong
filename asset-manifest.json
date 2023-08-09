@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/aldrin-ong/static/css/main.d5b7a921.css",
-    "main.js": "/aldrin-ong/static/js/main.9a720452.js",
-    "static/js/787.512dd3f2.chunk.js": "/aldrin-ong/static/js/787.512dd3f2.chunk.js",
-    "index.html": "/aldrin-ong/index.html",
-    "main.d5b7a921.css.map": "/aldrin-ong/static/css/main.d5b7a921.css.map",
-    "main.9a720452.js.map": "/aldrin-ong/static/js/main.9a720452.js.map",
-    "787.512dd3f2.chunk.js.map": "/aldrin-ong/static/js/787.512dd3f2.chunk.js.map"
+    "main.css": "/static/css/main.d5b7a921.css",
+    "main.js": "/static/js/main.2f3ace36.js",
+    "static/js/787.512dd3f2.chunk.js": "/static/js/787.512dd3f2.chunk.js",
+    "index.html": "/index.html",
+    "main.d5b7a921.css.map": "/static/css/main.d5b7a921.css.map",
+    "main.2f3ace36.js.map": "/static/js/main.2f3ace36.js.map",
+    "787.512dd3f2.chunk.js.map": "/static/js/787.512dd3f2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d5b7a921.css",
-    "static/js/main.9a720452.js"
+    "static/js/main.2f3ace36.js"
   ]
 }
