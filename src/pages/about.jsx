@@ -54,7 +54,7 @@ const About = () => {
 								<div className="about-image-container">
 									<div className="about-image-wrapper">
 										<img
-											src="3D_Animation_about.jpg"
+											src={`${process.env.PUBLIC_URL}/3D_Animation_about.jpg`}
 											alt="about"
 											className="about-image"
 										/>
