@@ -7,6 +7,11 @@
 	opacity: 0.8;
 }
 
+.homepage-article > a {
+    text-decoration: none;
+    color: inherit; /* This ensures the link does not apply its color to the text */
+}
+
 .homepage-article:hover {
 	background: #fafafa;
 	opacity: 1;
@@ -44,6 +49,7 @@
 	padding-top: 20px;
 	font-size: 15px;
 	font-weight: 700;
+	color: var(--link-color);
 }
 
 .homepage-article-link a {

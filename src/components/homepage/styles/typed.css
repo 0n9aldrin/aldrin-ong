@@ -1,0 +1,9 @@
+@import "../../../data/styles.css";
+
+.typed-cursor {
+    color: var(--link-color) !important;
+}
+
+.typed-text {
+    color: var(--link-color) !important;
+}

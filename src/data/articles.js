@@ -60,6 +60,27 @@ function article_2() {
 	};
 }
 
-const myArticles = [article_1, article_2];
+function article_3() {
+	return {
+		date: "7 August 2023",
+		title: "Artificial Intelligence in Sports",
+		description:
+			"AI is transforming the healthcare industry, from improving patient outcomes to streamlining operations. Discover the latest applications of this game-changing technology.",
+		style: ``,
+		keywords: [
+			"Artificial Intelligence in Healthcare",
+			"Tharindu",
+			"Tharindu N",
+			"Tharindu Nayanajith",
+		],
+		body: (
+			<React.Fragment>
+				<h1>Content of article 2</h1>
+			</React.Fragment>
+		),
+	};
+}
+
+const myArticles = [article_1, article_2, article_3];
 
 export default myArticles;

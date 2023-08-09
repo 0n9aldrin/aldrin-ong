@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
 
-import { faMailBulk } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-	faTwitter,
 	faGithub,
-	faStackOverflow,
 	faInstagram,
+	faLinkedin,
+	faMedium,
 } from "@fortawesome/free-brands-svg-icons";
 
 import Logo from "../components/common/logo";
@@ -16,6 +16,7 @@ import NavBar from "../components/common/navBar";
 import Article from "../components/homepage/article";
 import Works from "../components/homepage/works";
 import AllProjects from "../components/projects/allProjects";
+import TypedComponent from "../components/homepage/typed";
 
 import INFO from "../data/user";
 import SEO from "../data/seo";
@@ -92,7 +93,9 @@ const Homepage = () => {
 						<div className="homepage-first-area">
 							<div className="homepage-first-area-left-side">
 								<div className="title homepage-title">
-									{INFO.homepage.title}
+									<TypedComponent
+										strings={INFO.homepage.titles}
+									/>
 								</div>
 
 								<div className="subtitle homepage-subtitle">
@@ -115,12 +118,12 @@ const Homepage = () => {
 
 						<div className="homepage-socials">
 							<a
-								href={INFO.socials.twitter}
+								href={INFO.socials.linkedin}
 								target="_blank"
 								rel="noreferrer"
 							>
 								<FontAwesomeIcon
-									icon={faTwitter}
+									icon={faLinkedin}
 									className="homepage-social-icon"
 								/>
 							</a>
@@ -135,12 +138,12 @@ const Homepage = () => {
 								/>
 							</a>
 							<a
-								href={INFO.socials.stackoverflow}
+								href={INFO.socials.medium}
 								target="_blank"
 								rel="noreferrer"
 							>
 								<FontAwesomeIcon
-									icon={faStackOverflow}
+									icon={faMedium}
 									className="homepage-social-icon"
 								/>
 							</a>
@@ -160,7 +163,7 @@ const Homepage = () => {
 								rel="noreferrer"
 							>
 								<FontAwesomeIcon
-									icon={faMailBulk}
+									icon={faEnvelope}
 									className="homepage-social-icon"
 								/>
 							</a>
@@ -169,29 +172,27 @@ const Homepage = () => {
 						<div className="homepage-projects">
 							<AllProjects />
 						</div>
-
-						<div className="homepage-after-title">
-							<div className="homepage-articles">
-								{myArticles.map((article, index) => (
-									<div
-										className="homepage-article"
-										key={(index + 1).toString()}
-									>
-										<Article
-											key={(index + 1).toString()}
-											date={article().date}
-											title={article().title}
-											description={article().description}
-											link={"/article/" + (index + 1)}
-										/>
-									</div>
-								))}
-							</div>
-
-							<div className="homepage-works">
-								<Works />
-							</div>
+						<h2 className="work-experience-title">Work Experience</h2>
+						<div className="homepage-works">
+							<Works />
 						</div>
+						<div className="homepage-articles">
+							{myArticles.map((article, index) => (
+								<div
+									className="homepage-article"
+									key={(index + 1).toString()}
+								>
+									<Article
+										key={(index + 1).toString()}
+										date={article().date}
+										title={article().title}
+										description={article().description}
+										link={"/article/" + (index + 1)}
+									/>
+								</div>
+							))}
+						</div>
+
 
 						<div className="page-footer">
 							<Footer />
