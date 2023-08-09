@@ -1,0 +1,27 @@
+@import "../../../data/styles.css";
+
+.resume-container {
+    position: fixed;
+    top: calc(3vh + 9px);
+    right: 20px;
+    z-index: 999; /* Ensure it stays on top */
+}
+
+.resume-button {
+    margin: 0;
+    padding: 10px 20px;
+    color: var(--link-color);
+    border: 2px solid var(--link-color);
+    border-radius: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none; /* To remove underline from the anchor tag */
+    transition: background-color 0.3s ease;
+    font-size: 80%;
+}
+
+.resume-button:hover {
+    background-color: var(--link-color);
+    color: white;
+    transition: background-color 0.3s ease;
+}

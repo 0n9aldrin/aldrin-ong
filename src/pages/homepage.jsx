@@ -23,22 +23,28 @@ import SEO from "../data/seo";
 import myArticles from "../data/articles";
 
 import "./styles/homepage.css";
+import Resume from "../components/common/resume";
 
 const Homepage = () => {
 	const [stayLogo, setStayLogo] = useState(false);
 	const [logoSize, setLogoSize] = useState(80);
 	const [oldLogoSize, setOldLogoSize] = useState(80);
+    const [showMouseIcon, setShowMouseIcon] = useState(true);
+
 
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
 
 	useEffect(() => {
+		// eslint-disable-next-line no-unused-vars
+		let lastScrollY = window.pageYOffset;
+	
 		const handleScroll = () => {
-			let scroll = Math.round(window.pageYOffset, 2);
-
-			let newLogoSize = 80 - (scroll * 4) / 10;
-
+			const currentScrollY = Math.round(window.pageYOffset, 2);
+			
+			let newLogoSize = 80 - (currentScrollY * 4) / 10;
+	
 			if (newLogoSize < oldLogoSize) {
 				if (newLogoSize > 40) {
 					setLogoSize(newLogoSize);
@@ -51,11 +57,22 @@ const Homepage = () => {
 				setLogoSize(newLogoSize);
 				setStayLogo(false);
 			}
-		};
+			
+			// Logic for showing or hiding the mouse icon
+			setShowMouseIcon(currentScrollY < 100);
 
+	
+			lastScrollY = currentScrollY;
+		};
+	
 		window.addEventListener("scroll", handleScroll);
+	
+		// Cleanup listener when component unmounts
 		return () => window.removeEventListener("scroll", handleScroll);
+	
 	}, [logoSize, oldLogoSize]);
+	
+	
 
 	const currentSEO = SEO.find((item) => item.page === "home");
 
@@ -82,6 +99,7 @@ const Homepage = () => {
 
 			<div className="page-content">
 				<NavBar active="home" />
+				<Resume />
 				<div className="content-wrapper">
 					<div className="homepage-logo-container">
 						<div style={logoStyle}>
@@ -90,14 +108,11 @@ const Homepage = () => {
 					</div>
 
 					<div className="homepage-container">
+						<div className="title homepage-title">
+							<TypedComponent strings={INFO.homepage.titles} />
+						</div>
 						<div className="homepage-first-area">
 							<div className="homepage-first-area-left-side">
-								<div className="title homepage-title">
-									<TypedComponent
-										strings={INFO.homepage.titles}
-									/>
-								</div>
-
 								<div className="subtitle homepage-subtitle">
 									{INFO.homepage.description}
 								</div>
@@ -168,11 +183,18 @@ const Homepage = () => {
 								/>
 							</a>
 						</div>
-
+						<span className={`scroll-btn ${showMouseIcon ? '' : 'hidden'}`}>
+							<span class="mouse">
+								<span></span>
+							</span>
+						</span>
+						<h2 className="projects-title">Projects</h2>
 						<div className="homepage-projects">
 							<AllProjects />
 						</div>
-						<h2 className="work-experience-title">Work Experience</h2>
+						<h2 className="work-experience-title">
+							Work Experience
+						</h2>
 						<div className="homepage-works">
 							<Works />
 						</div>
@@ -192,7 +214,6 @@ const Homepage = () => {
 								</div>
 							))}
 						</div>
-
 
 						<div className="page-footer">
 							<Footer />

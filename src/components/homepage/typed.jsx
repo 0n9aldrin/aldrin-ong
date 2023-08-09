@@ -10,7 +10,7 @@ const TypedComponent = ({ strings }) => {
 	useEffect(() => {
 		const options = {
 			strings: strings,
-			typeSpeed: 50,
+			typeSpeed: 15,
 			backSpeed: 25,
 			backDelay: 1000,
 			loop: true,

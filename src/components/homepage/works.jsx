@@ -51,23 +51,25 @@ const Works = () => {
 								: "work-description"
 						}
 					>
-						<div className="work-header">
-							<FontAwesomeIcon icon={faMapMarkerAlt} />
-							<span>{workItem.location}</span>
-							<FontAwesomeIcon icon={faExternalLinkAlt} />
+						
+						<div className="work-content">
+							<div className="work-info">
+							<div className="work-header">
+							<FontAwesomeIcon icon={faMapMarkerAlt} className="work-header-icon"/>
+							<span className="work-header-text">{workItem.location}</span>
+							<FontAwesomeIcon icon={faExternalLinkAlt} className="work-header-icon"/>
 							<a
 								href={`https://${workItem.url}`}
 								target="_blank"
 								rel="noopener noreferrer"
+								className="work-header-text"
 							>
 								{workItem.url}
 							</a>
 						</div>
-						<div className="work-content">
-							<div className="work-info">
-								<p className="work-detail">
+								<div className="work-detail">
 									{workItem.description}
-								</p>
+								</div>
 								<div className="work-skills">
 									{workItem.skills.map((skill) => (
 										<span key={skill} className="skill">

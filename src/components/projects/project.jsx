@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
+import { Tilt } from "react-tilt"; // Use named import instead
 
 import "./styles/project.css";
 
@@ -9,7 +10,10 @@ const Project = (props) => {
 	const { logo, title, description, linkText, link } = props;
 
 	return (
-		<React.Fragment>
+		<Tilt
+			className="Tilt"
+			options={{ reverse: true, max: 25, scale: 0.95 }}
+		>
 			<div className="project">
 				<Link to={link} target="_blank" rel="noopener noreferrer">
 					<div className="project-container">
@@ -27,7 +31,7 @@ const Project = (props) => {
 					</div>
 				</Link>
 			</div>
-		</React.Fragment>
+		</Tilt>
 	);
 };
 

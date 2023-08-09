@@ -11,7 +11,7 @@
     position: relative;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-    border: 1px solid grey;  /* Adding border */
+	background-color: var(--link-color);
     border-radius: 8px;      /* Rounded corners */
     padding: 10px;           /* Some padding */
     display: flex;           /* Using flexbox */
@@ -20,7 +20,7 @@
     margin-bottom: 5px;     /* Provide spacing between work items */
 	transition: all cubic-bezier(0.4, 0, 0.2, 1) .4s;
 	box-sizing: border-box;
-	width: 740px;
+	width: 800px;
 	min-height: 54px;
     padding: 15px 20px;
 }
@@ -31,10 +31,11 @@
     align-items: center;     /* Vertically center items */
     flex-grow: 1;            /* Let it take as much space as possible, pushing the icon to the right */
     gap: 10px;               /* Optional: You can adjust gap if you want some space between title and duration */
+	color: var(--primary-color);
 }
 
 .active-work {
-    background-color: #a84f4f; /* Or whatever color you prefer */
+    background-color: #ff4000; /* Or whatever color you prefer */
 }
 
 .work-toggle-icon {
@@ -42,18 +43,19 @@
     margin-left: auto; /* This will push the icon to the far right inside the flex container */
     cursor: pointer;
 	padding-left: 10px;
+	color: var(--primary-color);
 }
 
 .work-description {
     max-height: 0;
     overflow-y: hidden;
-    width: 100%;
+    width: 800px;
     background-color: #f1f1f1;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 	transition: all cubic-bezier(.4,0,.2,1) .4s;
     /*transition: max-height 0.6s ease-in-out, padding 0.3s ease-in-out 0.6s; */
     border-radius: 8px;
-    margin: 10px 0;  /* Add space above and below the description */
+    margin: 5px 0;  /* Add space above and below the description */
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
 	display: flex;
     flex-direction: column;
@@ -62,15 +64,15 @@
 .work-content {
     display: flex; /* This arranges `work-info` and `company-logo` horizontally */
     justify-content: space-between; 
-    align-items: flex-start; /* To align the start of the child elements */
     width: 100%; /* Take full width */
+	align-items: center;
 }
 
 .work-info {
     display: flex;
-    flex-direction: column; /* Arranges `work-detail` and `work-skills` vertically */
+    flex-direction: column; 
     flex: 1; /* Allows it to take available space pushing the logo to the end */
-    gap: 10px; /* Adds space between `work-detail` and `work-skills` */
+	padding: 25px 10px 25px 25px;
 }
 
 
@@ -84,18 +86,19 @@
 	/* transition: max-height 0.6s ease-in-out 0.3s, padding 0.3s ease-in-out; */
 	transition: all cubic-bezier(.4,0,.2,1) .4s;
     max-height: 200px;
-	padding: 15px;
+	margin: 20px 0px 20px 0px;
+	/* padding: 15px; */
 }
 
 .work-title {
     font-size: 15px;
     font-weight: 700;
-    color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 .work-duration {
-    font-size: 12px;
-    color: var(--tertiary-color);
+    font-size: 15px;
+    color: var(--primary-color);
     display: flex;
     align-items: center; /* Vertically center the text and the icon */
     gap: 10px;  /* Space between the text and the icon */
@@ -108,8 +111,19 @@
     margin-bottom: 10px;
 }
 
+.work-header-text {
+    color: var(--background-color);
+	font-family: var(--secondary-font);
+	padding-right: 10px;
+}
+
+.work-header-icon {
+    color: var(--link-color);
+	padding-right: 5px;
+}
+
 .work-header a {
-    color: var(--primary-color);  /* Adjust color as needed */
+	color: var(--background-color);
     text-decoration: none;
 }
 
@@ -120,13 +134,16 @@
 .work-detail {
     flex: 1;
     margin-right: 10px;
+	padding-bottom: 20px;
+	font-weight: 400;
 }
 
 .company-logo {
     width: 90px;
     height: 90px;
     flex-shrink: 0;  /* To ensure it doesn't shrink */
-    align-self: start;  /* Aligns to the top */
+    align-self: center;  /* Aligns to the top */
+	padding-right: 25px;
 }
 
 .work-skills {
@@ -138,7 +155,7 @@
 }
 
 .skill {
-    background-color: #7d1717; /* Adjust as needed */
+    background-color: var(--link-color); /* Adjust as needed */
     border-radius: 15px;
     padding: 5px 10px;
     font-size: 12px;
