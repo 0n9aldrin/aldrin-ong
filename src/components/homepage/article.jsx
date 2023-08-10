@@ -11,7 +11,7 @@ const Article = (props) => {
 	const { title, description, date, link } = props;
 
 	return (
-		<Tilt className="Tilt" options={{ reverse: true, max: 25, scale: 1 }}>
+		<Tilt className="Tilt" options={{ reverse: true, max: 15, scale: 1 }}>
 			<div className="homepage-article">
 				<Link to={link} target="_blank" rel="noopener noreferrer">
 					<div className="homepage-article-content">

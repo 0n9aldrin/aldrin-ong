@@ -29,8 +29,7 @@ const Homepage = () => {
 	const [stayLogo, setStayLogo] = useState(false);
 	const [logoSize, setLogoSize] = useState(80);
 	const [oldLogoSize, setOldLogoSize] = useState(80);
-    const [showMouseIcon, setShowMouseIcon] = useState(true);
-
+	const [showMouseIcon, setShowMouseIcon] = useState(true);
 
 	useEffect(() => {
 		window.scrollTo(0, 0);
@@ -39,12 +38,12 @@ const Homepage = () => {
 	useEffect(() => {
 		// eslint-disable-next-line no-unused-vars
 		let lastScrollY = window.pageYOffset;
-	
+
 		const handleScroll = () => {
 			const currentScrollY = Math.round(window.pageYOffset, 2);
-			
+
 			let newLogoSize = 80 - (currentScrollY * 4) / 10;
-	
+
 			if (newLogoSize < oldLogoSize) {
 				if (newLogoSize > 40) {
 					setLogoSize(newLogoSize);
@@ -57,22 +56,18 @@ const Homepage = () => {
 				setLogoSize(newLogoSize);
 				setStayLogo(false);
 			}
-			
+
 			// Logic for showing or hiding the mouse icon
 			setShowMouseIcon(currentScrollY < 100);
 
-	
 			lastScrollY = currentScrollY;
 		};
-	
+
 		window.addEventListener("scroll", handleScroll);
-	
+
 		// Cleanup listener when component unmounts
 		return () => window.removeEventListener("scroll", handleScroll);
-	
 	}, [logoSize, oldLogoSize]);
-	
-	
 
 	const currentSEO = SEO.find((item) => item.page === "home");
 
@@ -122,7 +117,10 @@ const Homepage = () => {
 								<div className="homepage-image-container">
 									<div className="homepage-image-wrapper">
 										<img
-											src={process.env.PUBLIC_URL + '/homepage.jpg'}
+											src={
+												process.env.PUBLIC_URL +
+												"/homepage.jpg"
+											}
 											alt="about"
 											className="homepage-image"
 										/>
@@ -183,7 +181,11 @@ const Homepage = () => {
 								/>
 							</a>
 						</div>
-						<span className={`scroll-btn ${showMouseIcon ? '' : 'hidden'}`}>
+						<span
+							className={`scroll-btn ${
+								showMouseIcon ? "" : "hidden"
+							}`}
+						>
 							<span class="mouse">
 								<span></span>
 							</span>
@@ -192,15 +194,21 @@ const Homepage = () => {
 						<div className="homepage-projects">
 							<AllProjects />
 						</div>
+						<div className="more-projects">
+							<a
+								href={process.env.PUBLIC_URL + "/projects"}
+								className="more-button"
+							>
+								View all projects
+							</a>
+						</div>
 						<h2 className="work-experience-title">
 							Work Experience
 						</h2>
 						<div className="homepage-works">
 							<Works />
 						</div>
-						<h2 className="blogs-title">
-							Blogs
-						</h2>
+						<h2 className="blogs-title">Blogs</h2>
 						<div className="homepage-articles">
 							{myArticles.map((article, index) => (
 								<div

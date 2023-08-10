@@ -19,7 +19,7 @@ const INFO = {
 	homepage: {
 		titles: ["Full-stack Web Developer", "Mobile App Developer", "Budding Entrepreneur", "Product Manager", "Tech Visionary"],
 		description:
-			"With a strong foundation in computer science from UC Berkeley and hands-on experience in building top-notch applications, I've always been at the intersection of technology and business. My entrepreneurial spirit has driven me to co-found startups, and my experience, outside my comfort zone, as a Product Manager at Jetzy exemplifies my inherent drive to take ownership and dive deep into new challenges, never saying \"that's not my job\". Whether I'm improving usability metrics at Amazon (AWS) or launching a trending tennis app, I bring a unique blend of technical expertise, strategic thinking, and a genuine passion for creating impactful digital solutions.",
+			"With a strong computer sceicne foundation from UC Berkeley and hands-on experience in building top-notch applications, I've always been at the intersection of tech and business. My entrepreneurial spirit has driven me to co-found startups, and my experience, outside my comfort zone, as a Product Manager at Jetzy exemplifies my inherent drive to take ownership and dive deep into new challenges, never saying \"that's not my job\". Whether I'm improving usability metrics at Amazon (AWS) or launching a trending tennis app, I bring a unique blend of technical expertise, strategic thinking, and a genuine passion for creating impactful digital solutions.",
 	},
 
 	about: {

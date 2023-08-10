@@ -105,6 +105,29 @@
 	color: var(--primary-color);
 }
 
+.more-projects {
+	margin-top: 10px;
+	text-align: center;
+}
+
+.more-button {
+    padding: 10px 20px;
+    color: var(--link-color);
+    border: 2px solid var(--link-color);
+    border-radius: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none; /* To remove underline from the anchor tag */
+    transition: background-color 0.3s ease;
+    font-size: 80%;
+}
+
+.more-button:hover {
+    background-color: var(--link-color);
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
 .work-experience-title {
 	font-size: 62px;
 	margin-top: 65px;
