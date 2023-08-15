@@ -209,9 +209,23 @@
 	} */
 }
 
+/* Phone Screen */
 @media (max-width: 480px) {
     .homepage-title {
         font-size: 2rem !important;
 		height: 8rem !important;
     }
+
+	.projects-title {
+		font-size: 2rem;
+	}
+
+	.work-experience-title {
+		font-size: 2rem;
+	}
+
+	.blogs-title {
+		font-size: 2rem;
+	}
+
 }
