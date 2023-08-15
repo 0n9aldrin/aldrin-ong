@@ -11,6 +11,7 @@ import SEO from "../data/seo";
 import myArticles from "../data/articles";
 
 import "./styles/articles.css";
+import Resume from "../components/common/resume";
 
 const Articles = () => {
 	useEffect(() => {
@@ -32,6 +33,7 @@ const Articles = () => {
 
 			<div className="page-content">
 				<NavBar active="articles" />
+				<Resume />
 				<div className="content-wrapper">
 					<div className="articles-logo-container">
 						<div className="articles-logo">

@@ -25,3 +25,15 @@
     color: white;
     transition: background-color 0.3s ease;
 }
+
+/* Phone Screen */
+@media (max-width: 480px) {
+    .resume-container {
+        display: none;
+    }
+
+    .resume-button {
+        display: none;
+    }
+	
+}

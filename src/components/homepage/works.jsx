@@ -51,22 +51,34 @@ const Works = () => {
 								: "work-description"
 						}
 					>
-						
 						<div className="work-content">
+							<img
+								src={workItem.logo}
+								alt={`${workItem.title} Logo`}
+								className="company-logo"
+							/>
 							<div className="work-info">
-							<div className="work-header">
-							<FontAwesomeIcon icon={faMapMarkerAlt} className="work-header-icon"/>
-							<span className="work-header-text">{workItem.location}</span>
-							<FontAwesomeIcon icon={faExternalLinkAlt} className="work-header-icon"/>
-							<a
-								href={`https://${workItem.url}`}
-								target="_blank"
-								rel="noopener noreferrer"
-								className="work-header-text"
-							>
-								{workItem.url}
-							</a>
-						</div>
+								<div className="work-header">
+									<FontAwesomeIcon
+										icon={faMapMarkerAlt}
+										className="work-header-icon"
+									/>
+									<span className="work-header-text">
+										{workItem.location}
+									</span>
+									<FontAwesomeIcon
+										icon={faExternalLinkAlt}
+										className="work-header-icon"
+									/>
+									<a
+										href={`https://${workItem.url}`}
+										target="_blank"
+										rel="noopener noreferrer"
+										className="work-header-text"
+									>
+										{workItem.url}
+									</a>
+								</div>
 								<div className="work-detail">
 									{workItem.description}
 								</div>
@@ -78,11 +90,6 @@ const Works = () => {
 									))}
 								</div>
 							</div>
-							<img
-								src={workItem.logo}
-								alt={`${workItem.title} Logo`}
-								className="company-logo"
-							/>
 						</div>
 					</div>
 				</div>

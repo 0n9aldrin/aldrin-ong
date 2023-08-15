@@ -10,6 +10,7 @@ import INFO from "../data/user";
 import SEO from "../data/seo";
 
 import "./styles/about.css";
+import Resume from "../components/common/resume";
 
 const About = () => {
 	useEffect(() => {
@@ -31,6 +32,7 @@ const About = () => {
 
 			<div className="page-content">
 				<NavBar active="about" />
+				<Resume />
 				<div className="content-wrapper">
 					<div className="about-logo-container">
 						<div className="about-logo">

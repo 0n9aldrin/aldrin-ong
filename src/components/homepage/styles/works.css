@@ -85,7 +85,7 @@
 .active-work + .work-description {
 	/* transition: max-height 0.6s ease-in-out 0.3s, padding 0.3s ease-in-out; */
 	transition: all cubic-bezier(.4,0,.2,1) .4s;
-    max-height: 200px;
+    max-height: 300px;
 	margin: 20px 0px 20px 0px;
 	/* padding: 15px; */
 }
@@ -143,7 +143,7 @@
     height: 90px;
     flex-shrink: 0;  /* To ensure it doesn't shrink */
     align-self: center;  /* Aligns to the top */
-	padding-right: 25px;
+	padding-left: 25px;
 }
 
 .work-skills {
@@ -159,4 +159,30 @@
     border-radius: 15px;
     padding: 5px 10px;
     font-size: 12px;
+}
+
+@media only screen and (max-width: 800px) {
+    .work-duration {
+        display: none;
+    }
+    
+    .work-content {
+        flex-direction: column;
+        align-items: flex-start;  /* Aligns items to the start */
+    }
+
+    .company-logo {
+        align-self: center;  /* Center the logo */
+        margin-top: 15px;    /* Add some spacing at the top */
+    }
+
+    .work, .work-description {
+        width: 100%;  /* Take up the full width */
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .active-work + .work-description {
+        max-height: 600px;
+    }
 }

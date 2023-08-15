@@ -24,6 +24,7 @@ import myArticles from "../data/articles";
 
 import "./styles/homepage.css";
 import Resume from "../components/common/resume";
+import MouseIcon from "../components/homepage/mouseIcon";
 
 const Homepage = () => {
 	const [stayLogo, setStayLogo] = useState(false);
@@ -119,7 +120,7 @@ const Homepage = () => {
 										<img
 											src={
 												process.env.PUBLIC_URL +
-												"/homepage.jpg"
+												"/homepage2.jpg"
 											}
 											alt="about"
 											className="homepage-image"
@@ -181,15 +182,7 @@ const Homepage = () => {
 								/>
 							</a>
 						</div>
-						<span
-							className={`scroll-btn ${
-								showMouseIcon ? "" : "hidden"
-							}`}
-						>
-							<span class="mouse">
-								<span></span>
-							</span>
-						</span>
+						<MouseIcon showMouseIcon={showMouseIcon} />
 						<h2 className="projects-title">Projects</h2>
 						<div className="homepage-projects">
 							<AllProjects />
@@ -207,6 +200,14 @@ const Homepage = () => {
 						</h2>
 						<div className="homepage-works">
 							<Works />
+						</div>
+						<div className="more-work">
+							<a
+								href={process.env.PUBLIC_URL + "/work"}
+								className="more-button"
+							>
+								View full resume
+							</a>
 						</div>
 						<h2 className="blogs-title">Blogs</h2>
 						<div className="homepage-articles">
