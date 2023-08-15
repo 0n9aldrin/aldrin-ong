@@ -6,6 +6,15 @@ const INFO = {
 		logo: `${process.env.PUBLIC_URL}/3D_Animation_logo.jpg`,
 	},
 
+	nav: [
+		{ name: "Home", route: "/" },
+		{ name: "About", route: "/about" },
+		{ name: "Work", route: "/work" },
+		{ name: "Projects", route: "/projects" },
+		{ name: "Articles", route: "/articles" },
+		{ name: "Contact", route: "/contact" },
+	],
+
 	socials: {
 		twitter: "https://twitter.com/",
 		github: "https://github.com/0n9aldrin",
@@ -17,7 +26,13 @@ const INFO = {
 	},
 
 	homepage: {
-		titles: ["Full-stack Web Developer", "Mobile App Developer", "Budding Entrepreneur", "Product Manager", "Tech Visionary"],
+		titles: [
+			"Full-stack Web Developer",
+			"Mobile App Developer",
+			"Budding Entrepreneur",
+			"Product Manager",
+			"Tech Visionary",
+		],
 		description:
 			"With a strong computer sceicne foundation from UC Berkeley and hands-on experience in building top-notch applications, I've always been at the intersection of tech and business. My entrepreneurial spirit has driven me to co-found startups, and my experience, outside my comfort zone, as a Product Manager at Jetzy exemplifies my inherent drive to take ownership and dive deep into new challenges, never saying \"that's not my job\". Whether I'm improving usability metrics at Amazon (AWS) or launching a trending tennis app, I bring a unique blend of technical expertise, strategic thinking, and a genuine passion for creating impactful digital solutions.",
 	},
@@ -38,34 +53,56 @@ const INFO = {
 		title: "My work experience inspiring the next generation of innovators.",
 		description:
 			"Chronological collection of my long-form thoughts on programming, leadership, product design, and more.",
-		items: [{
-			title: "Amazon Web Services",
-			role: "Software Development Engineer Intern",
-			date: "May 2023 - Aug 2023",
-			description: "Spearheaded the development of a high-visibility AWS console feature, enhancing usability metrics by 20%, and significantly optimized backend latency and code quality.",
-			logo: `${process.env.PUBLIC_URL}/aws.png`,
-			location: "Seattle, WA",
-			url: "aws.amazon.com/",
-			skills: ["React", "Java", "Restful API", "AWS", "Lambda", "OpenSearch", "SQL"],
-		}, {
-			title: "Jetzy",
-			role: "Lead Product Manager",
-			date: "May 2022 - Dec 2022",
-			description: "Championed user acquisition strategies resulting in a 530% surge in new sign-ups, while steering cross-functional teams to prioritize and successfully launch three strategic products.",
-			logo: `${process.env.PUBLIC_URL}/jetzy.png`,
-			location: "New York City, NY",
-			url: "jetzyapp.com/",
-			skills: ["Jira", "Figma", "Flutter", "Firebase", "Google analytics", "SQL"],
-		}, {
-			title: "Trainme",
-			role: "Co-Founder & CTO",
-			date: "Jun 2019 - Jan 2021",
-			description: "Launched and managed a tennis-centric platform connecting coaches and students, securing a top-three trending spot on Google Play Store and gaining endorsement from the Indonesian Tennis Association.",
-			logo: `${process.env.PUBLIC_URL}/trainme.png`,
-			location: "Jakarta, Indonesia",
-			url: "trainme.com/",
-			skills: ["Android Studio", "PHP", "Firebase"],
-		}],
+		items: [
+			{
+				title: "Amazon Web Services",
+				role: "Software Development Engineer Intern",
+				date: "May 2023 - Aug 2023",
+				description:
+					"Spearheaded the development of a high-visibility AWS console feature, enhancing usability metrics by 20%, and significantly optimized backend latency and code quality.",
+				logo: `${process.env.PUBLIC_URL}/aws.png`,
+				location: "Seattle, WA",
+				url: "aws.amazon.com/",
+				skills: [
+					"React",
+					"Java",
+					"Restful API",
+					"AWS",
+					"Lambda",
+					"OpenSearch",
+					"SQL",
+				],
+			},
+			{
+				title: "Jetzy",
+				role: "Lead Product Manager",
+				date: "May 2022 - Dec 2022",
+				description:
+					"Championed user acquisition strategies resulting in a 530% surge in new sign-ups, while steering cross-functional teams to prioritize and successfully launch three strategic products.",
+				logo: `${process.env.PUBLIC_URL}/jetzy.png`,
+				location: "New York City, NY",
+				url: "jetzyapp.com/",
+				skills: [
+					"Jira",
+					"Figma",
+					"Flutter",
+					"Firebase",
+					"Google analytics",
+					"SQL",
+				],
+			},
+			{
+				title: "Trainme",
+				role: "Co-Founder & CTO",
+				date: "Jun 2019 - Jan 2021",
+				description:
+					"Launched and managed a tennis-centric platform connecting coaches and students, securing a top-three trending spot on Google Play Store and gaining endorsement from the Indonesian Tennis Association.",
+				logo: `${process.env.PUBLIC_URL}/trainme.png`,
+				location: "Jakarta, Indonesia",
+				url: "trainme.com/",
+				skills: ["Android Studio", "PHP", "Firebase"],
+			},
+		],
 	},
 
 	projects: [
