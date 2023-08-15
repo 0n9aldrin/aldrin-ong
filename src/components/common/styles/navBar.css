@@ -80,6 +80,7 @@
 
 	.nav-background.menu {
 		background-color: transparent;
+		height: 0;
 	}
 
 	.nav-background {
