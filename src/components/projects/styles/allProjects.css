@@ -19,4 +19,9 @@
 	.all-projects-project {
 		width: calc(100% / 2);
 	}
+
+	.all-projects-container {
+		margin-left: -25px;
+		margin-right: -25px;
+	}
 }
