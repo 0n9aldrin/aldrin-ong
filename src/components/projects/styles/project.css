@@ -71,3 +71,9 @@
 		max-height: 400px;
 	}
 }
+
+@media (max-width: 480px) {
+	.project-description {
+		font-size: 12px;
+	}
+}
