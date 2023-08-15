@@ -59,7 +59,7 @@
 .menu-btn {
 	display: none;
 	border: none;
-	font-size: 24px;
+	/* font-size: 24px; */
 	cursor: pointer;
 	background: var(--color-gray-800);
 	border-radius: 50px;
