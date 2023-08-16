@@ -2,10 +2,10 @@ import React from "react";
 
 function article_1() {
 	return {
-		date: "7 May 2023",
-		title: "The Benefits of Cloud Computing",
+		date: "20 June 2023",
+		title: "Berkeley Consulting Clubs (Part 1): How to get into a “competitive” consulting club at Berkeley?",
 		description:
-			"Cloud computing offers a range of benefits, including cost savings and increased flexibility. Find out why more businesses are turning to the cloud.",
+			"How to get into a competitive consulting club at Berkeley? Berkeley consulting clubs are a game and you need to play the game well to win!",
 		keywords: [
 			"The Benefits of Cloud Computing",
 			"Tharindu",
