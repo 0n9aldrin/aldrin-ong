@@ -10,7 +10,6 @@
 .work {
     position: relative;
     cursor: pointer;
-    transition: all 0.3s ease-in-out;
 	background-color: var(--link-color);
     border-radius: 8px;      /* Rounded corners */
     padding: 10px;           /* Some padding */
@@ -174,6 +173,7 @@
     .company-logo {
         align-self: center;  /* Center the logo */
         margin-top: 15px;    /* Add some spacing at the top */
+        padding-left: 0;
     }
 
     .work, .work-description {
