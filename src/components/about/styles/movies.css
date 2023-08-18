@@ -76,12 +76,11 @@
 	padding: 20px;
 	border-radius: 10px;
 	position: relative;
-	height: 90vh;
+	height: auto;
 }
 
 .modal-inner {
     overflow-y: auto;
-    height: 90vh;
 }
 
 .modal-close {
@@ -175,4 +174,8 @@
 	.modal {
 		width: 80%;
 	}
+
+    .modal-inner {
+        height: 90vh;
+    }
 }
