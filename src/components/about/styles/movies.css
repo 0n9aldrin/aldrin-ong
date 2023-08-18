@@ -1,0 +1,69 @@
+@import "../../../data/styles.css";
+
+.movies-container {
+    display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.movie {
+	width: calc(100% / 3);
+	box-sizing: border-box;
+	padding: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.movie-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+}
+
+.bubble {
+    display: none;
+    position: absolute;
+    background-color: var(--color-gray-700); /* Dark background */
+    color: #fff; /* White text */
+    padding: 8px 12px;
+    border-radius: 6px;
+    left: 50%; /*Center it horizontally */
+    transform: translateX(-50%); /* Ensure it's perfectly centered */
+    margin-bottom: 10px; /* Some space between tooltip and image */
+    pointer-events: none; /* Ensures the tooltip won't interfere with mouse events */
+    z-index: 10; /* makes sure the tooltip is on top */
+    width: auto; /* let the width be determined by the content and padding */
+    white-space: nowrap; /* to prevent wrapping of the title, adjust if needed */
+    bottom: 98%;
+}
+
+.bubble::after {
+    content: "";  /* mandatory for the pseudo-element to be generated */
+    position: absolute;
+    bottom: -10px;  /* this will position the tip just below the bubble */
+    left: 50%;  /* center the tip horizontally */
+    transform: translateX(-50%);  /* perfectly center it */
+    width: 0;  /* width and height should be zero as the triangle is formed using borders */
+    height: 0;
+    border-left: 8px solid transparent;  /* left side of the triangle */
+    border-right: 8px solid transparent;  /* right side of the triangle */
+    border-top: 10px solid var(--color-gray-700);  /* the triangle itself, pointing down */
+}
+
+.movie:hover .bubble {
+    display: block; /* Show the tooltip on hover */
+}
+
+@media (max-width: 480px) {
+	.bubble {
+		font-size: 12px;
+	}
+
+    .movie-image img {
+        border-radius: 10px;
+    }
+}
+

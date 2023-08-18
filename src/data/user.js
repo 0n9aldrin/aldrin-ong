@@ -60,7 +60,7 @@ const INFO = {
 				date: "May 2023 - Aug 2023",
 				description:
 					"Spearheaded the development of a high-visibility AWS console feature, enhancing usability metrics by 20%, and significantly optimized backend latency and code quality.",
-				logo: `${process.env.PUBLIC_URL}/aws.png`,
+				logo: `${process.env.PUBLIC_URL}/work/aws.png`,
 				location: "Seattle, WA",
 				url: "aws.amazon.com/",
 				skills: [
@@ -79,7 +79,7 @@ const INFO = {
 				date: "May 2022 - Dec 2022",
 				description:
 					"Championed user acquisition strategies resulting in a 530% surge in new sign-ups, while steering cross-functional teams to prioritize and successfully launch three strategic products.",
-				logo: `${process.env.PUBLIC_URL}/jetzy.png`,
+				logo: `${process.env.PUBLIC_URL}/work/jetzy.png`,
 				location: "New York City, NY",
 				url: "jetzyapp.com/",
 				skills: [
@@ -97,7 +97,7 @@ const INFO = {
 				date: "Jun 2019 - Jan 2021",
 				description:
 					"Launched and managed a tennis-centric platform connecting coaches and students, securing a top-three trending spot on Google Play Store and gaining endorsement from the Indonesian Tennis Association.",
-				logo: `${process.env.PUBLIC_URL}/trainme.png`,
+				logo: `${process.env.PUBLIC_URL}/work/trainme.png`,
 				location: "Jakarta, Indonesia",
 				url: "trainme.com/",
 				skills: ["Android Studio", "PHP", "Firebase"],
@@ -105,12 +105,60 @@ const INFO = {
 		],
 	},
 
+	movies: [
+		{
+			title: "Your Name",
+			year: "2016",
+			image: `${process.env.PUBLIC_URL}/movies/name.jpg`,
+		},
+		{
+			title: "Everything Everywhere All at Once",
+			year: "2022",
+			image: `${process.env.PUBLIC_URL}/movies/everything.jpg`,
+		},
+		{
+			title: "Baby Driver",
+			year: "2017",
+			image: `${process.env.PUBLIC_URL}/movies/baby.jpg`,
+		},
+		{
+			title: "12 Angry Men",
+			year: "1957",
+			image: `${process.env.PUBLIC_URL}/movies/angry.jpg`,
+		},
+		{
+			title: "Princess Mononoke",
+			year: "1997",
+			image: `${process.env.PUBLIC_URL}/movies/mononoke.jpg`,
+		},
+		{
+			title: "Coraline",
+			year: "2009",
+			image: `${process.env.PUBLIC_URL}/movies/coraline.jpg`,
+		},
+		{
+			title: "Ratatouille",
+			year: "2007",
+			image: `${process.env.PUBLIC_URL}/movies/rat.jpg`,
+		},
+		{
+			title: "The Truman Show",
+			year: "1998",
+			image: `${process.env.PUBLIC_URL}/movies/truman.jpg`,
+		},
+		{
+			title: "Spirited Away",
+			year: "2001",
+			image: `${process.env.PUBLIC_URL}/movies/spirited.jpg`,
+		},
+	],
+
 	projects: [
 		{
 			title: "Lecturely",
 			description:
 				"A React Native application designed to enhance the interaction between course staff and students during large live lectures.",
-			logo: `${process.env.PUBLIC_URL}/lecturely.png`,
+			logo: `${process.env.PUBLIC_URL}/projects/lecturely.png`,
 			linkText: "View Project",
 			link: "https://github.com/NithikYekollu/lecturely-new",
 		},
@@ -119,7 +167,7 @@ const INFO = {
 			title: "TMDB Declarative UI",
 			description:
 				"An internship project implemented using Jetpack Compose to display popular movies using The Movie Database API.",
-			logo: "https://developer.android.com/static/images/logos/android.svg",
+			logo: `${process.env.PUBLIC_URL}/projects/android.svg`,
 			linkText: "View Project",
 			link: "https://github.com/0n9aldrin/tmdb-declarative-ui",
 		},
@@ -128,7 +176,7 @@ const INFO = {
 			title: "Price Comparison App",
 			description:
 				"A Flutter app that compares the prices of 5 Indonesian e-commerce websites using web scraping and hidden endpoints.",
-			logo: "https://cdn.iconscout.com/icon/free/png-512/free-flutter-2038877-1720090.png?f=avif&w=512",
+			logo: `${process.env.PUBLIC_URL}/projects/flutter.png`,
 			linkText: "View Project",
 			link: "https://github.com/0n9aldrin/price-comparison",
 		},
@@ -137,7 +185,7 @@ const INFO = {
 			title: "Machine Learning Research Paper",
 			description:
 				"To what extent can supervised ML algorithms — ANNs and SVMs — be used to predict football matches in the Premier League?",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
+			logo: `${process.env.PUBLIC_URL}/projects/python.png`,
 			linkText: "View Project",
 			link: "research.pdf",
 		},
@@ -146,7 +194,7 @@ const INFO = {
 			title: "Two Wish",
 			description:
 				"A customer side Flutter app of the TwoWish.jkt company that allows users to donate and contact various organisations that need donations. ",
-			logo: "https://cdn.iconscout.com/icon/free/png-512/free-flutter-2038877-1720090.png?f=avif&w=512",
+			logo: `${process.env.PUBLIC_URL}/projects/flutter.png`,
 			linkText: "View Project",
 			link: "https://github.com/0n9aldrin/2wish",
 		},
@@ -155,7 +203,7 @@ const INFO = {
 			title: "Trainme",
 			description:
 				"An android app that connects Indonesian tennis coaches with students and is a one-stop platform for tennis enthusiasts.",
-			logo: `${process.env.PUBLIC_URL}/trainme.png`,
+			logo: `${process.env.PUBLIC_URL}/work/trainme.png`,
 			linkText: "View Project",
 			link: "https://github.com/0n9aldrin/trainme-frontend",
 		},
