@@ -76,21 +76,25 @@
 	padding: 20px;
 	border-radius: 10px;
 	position: relative;
-	max-height: 90vh;
-	overflow-y: auto;
+	height: 90vh;
+}
+
+.modal-inner {
+    overflow-y: auto;
+    height: 90vh;
 }
 
 .modal-close {
 	position: absolute;
 	top: 20px;
 	right: 20px;
-	width: 30px;  /* Set width */
+	width: 30px; /* Set width */
 	height: 30px; /* Set height */
 	background-color: var(--color-gray-800);
-    border-radius: 50%;  /* Adjusted to make it a circle */
+	border-radius: 50%; /* Adjusted to make it a circle */
 	border: none;
 	font-size: 15px;
-	line-height: 20px;  /* Helps to center the text vertically */
+	line-height: 20px; /* Helps to center the text vertically */
 	text-align: center; /* Centers the text horizontally */
 	cursor: pointer;
 	color: white;
@@ -126,10 +130,10 @@
 
 .modal-content .modal-right-side .movie-info p {
 	color: var(--secondary-color);
-    font-size: 16px;
-    padding-right: 10px;
-    font-weight: normal;
-    margin: 0;
+	font-size: 16px;
+	padding-right: 10px;
+	font-weight: normal;
+	margin: 0;
 }
 
 .modal-right-side p:first-child {
@@ -150,5 +154,25 @@
 
 	.movie-image img {
 		border-radius: 10px;
+	}
+
+	.modal-image {
+		align-self: center;
+	}
+
+	.modal-content {
+		flex-direction: column;
+	}
+
+	.modal-right-side {
+		padding-left: 0;
+	}
+
+	.movie-info {
+		flex-direction: column;
+	}
+
+	.modal {
+		width: 80%;
 	}
 }

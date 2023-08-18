@@ -32,30 +32,35 @@ const Movies = () => {
 			{isOpen && (
 				<div className="modal-overlay">
 					<div className="modal">
-						<button
-							className="modal-close"
-							onClick={() => setIsOpen(false)}
-						>
-							<FontAwesomeIcon icon={faTimes}/>
-						</button>
-						<div className="modal-content">
-							<img
-								className="modal-image"
-								src={selectedMovie.image}
-								alt="Selected movie"
-							/>
-							<div className="modal-right-side">
-								<p>{selectedMovie.title}</p>
-								<div className="movie-info">
-									<p>{selectedMovie.year}</p>
-									<p>Directed by: {selectedMovie.director}</p>
+						<div className="modal-inner">
+							<button
+								className="modal-close"
+								onClick={() => setIsOpen(false)}
+							>
+								<FontAwesomeIcon icon={faTimes} />
+							</button>
+							<div className="modal-content">
+								<img
+									className="modal-image"
+									src={selectedMovie.image}
+									alt="Selected movie"
+								/>
+								<div className="modal-right-side">
+									<p>{selectedMovie.title}</p>
+									<div className="movie-info">
+										<p>{selectedMovie.year}</p>
+										<p>
+											Directed by:{" "}
+											{selectedMovie.director}
+										</p>
+									</div>
+									<p>{selectedMovie.tagline}</p>
+									<p>{selectedMovie.description}</p>
 								</div>
-								<p>{selectedMovie.tagline}</p>
-								<p>{selectedMovie.description}</p>
 							</div>
+							<p>Rating: {selectedMovie.rating}</p>
+							<p>Review: {selectedMovie.review}</p>
 						</div>
-						<p>Rating: {selectedMovie.rating}</p>
-						<p>Review: {selectedMovie.review}</p>
 					</div>
 				</div>
 			)}
