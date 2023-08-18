@@ -51,7 +51,10 @@ const Contact = () => {
 							suggestions. If you have a specific question or
 							comment, please feel free to email me directly at
 							&nbsp;{" "}
-							<a href={`mailto:${INFO.main.email}`}>
+							<a
+								className="link"
+								href={`mailto:${INFO.main.email}`}
+							>
 								{INFO.main.email}
 							</a>
 							. I make an effort to respond to all messages within
@@ -59,15 +62,15 @@ const Contact = () => {
 							periods. Alternatively, if you prefer to connect on
 							social media, you can find me on{" "}
 							<a
+								className="link"
 								href={INFO.socials.instagram}
 								target="_blank"
 								rel="noreferrer"
 							>
 								{INFO.socials.instagram}
 							</a>
-							. Don't hesitate to reach out.
-							Thanks again for your interest, and I look forward
-							to hearing from you!
+							. Don't hesitate to reach out. Thanks again for your
+							interest, and I look forward to hearing from you!
 						</div>
 					</div>
 
