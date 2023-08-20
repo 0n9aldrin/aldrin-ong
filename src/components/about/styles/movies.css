@@ -117,6 +117,7 @@
 .movie-info {
 	display: flex;
 	flex-direction: row;
+    font-family: var(--secondary-font);
 }
 
 .modal-content p {
@@ -144,6 +145,11 @@
 
 .modal p {
 	color: var(--secondary-color);
+}
+
+.my-review {
+	color: var(--primary-color) !important;
+    font-weight: 700;
 }
 
 @media (max-width: 480px) {

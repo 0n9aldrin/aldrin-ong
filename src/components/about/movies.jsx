@@ -58,8 +58,9 @@ const Movies = () => {
 									<p>{selectedMovie.description}</p>
 								</div>
 							</div>
+                            <p className="my-review">My Review</p>
 							<p>Rating: {selectedMovie.rating}</p>
-							<p>Review: {selectedMovie.review}</p>
+							<p>{selectedMovie.review}</p>
 						</div>
 					</div>
 				</div>
