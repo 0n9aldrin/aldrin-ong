@@ -1,16 +1,19 @@
 import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
+import {
+	VerticalTimeline,
+	VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
 
 import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
 import Logo from "../components/common/logo";
-import Article from "../components/articles/article";
 
 import INFO from "../data/user";
 import SEO from "../data/seo";
-import myArticles from "../data/articles";
 
-import "./styles/articles.css";
+import "./styles/work.css"; // Renamed the CSS file.
 import Resume from "../components/common/resume";
 
 const Work = () => {
@@ -18,12 +21,12 @@ const Work = () => {
 		window.scrollTo(0, 0);
 	}, []);
 
-	const currentSEO = SEO.find((item) => item.page === "articles");
+	const currentSEO = SEO.find((item) => item.page === "articles"); // Changed to "work"
 
 	return (
 		<React.Fragment>
 			<Helmet>
-				<title>{`Articles | ${INFO.main.title}`}</title>
+				<title>{`Work | ${INFO.main.title}`}</title>
 				<meta name="description" content={currentSEO.description} />
 				<meta
 					name="keywords"
@@ -35,39 +38,52 @@ const Work = () => {
 				<NavBar active="work" />
 				<Resume />
 				<div className="content-wrapper">
-					<div className="articles-logo-container">
-						<div className="articles-logo">
+					<div className="work-logo-container">
+						<div className="work-logo">
 							<Logo width={46} />
 						</div>
 					</div>
 
-					<div className="articles-main-container">
-						<div className="title articles-title">
+					<div className="work-main-container">
+						<div className="title work-title">
 							{INFO.work.title}
 						</div>
 
-						<div className="subtitle articles-subtitle">
+						<div className="subtitle work-subtitle">
 							{INFO.work.description}
 						</div>
 
-						<div className="articles-container">
-							<div className="articles-wrapper">
-								{myArticles.map((article, index) => (
-									<div
-										className="articles-article"
-										key={(index + 1).toString()}
-									>
-										<Article
-											key={(index + 1).toString()}
-											date={article().date}
-											title={article().title}
-											description={article().description}
-											link={"/article/" + (index + 1)}
+						<VerticalTimeline lineColor="#2e3039">
+							{INFO.work.items.map((item, index) => (
+								<VerticalTimelineElement
+									key={index.toString()}
+									date={item.date}
+									iconStyle={{
+										background: "#2e3039",
+										color: "#2e3039",
+										display: "flex",
+										alignItems: "center",
+										justifyContent: "center",
+										borderColor: "#2e3039",
+									}}
+									icon={
+										<img
+											src={item.logo}
+											alt={item.title}
+											style={{
+												width: "100%",
+												height: "100%",
+												objectFit: "contain",
+											}}
 										/>
-									</div>
-								))}
-							</div>
-						</div>
+									}
+								>
+									<h3>{item.title}</h3>
+									<h4>{item.role}</h4>
+									<p>{item.longDescription}</p>
+								</VerticalTimelineElement>
+							))}
+						</VerticalTimeline>
 					</div>
 					<div className="page-footer">
 						<Footer />

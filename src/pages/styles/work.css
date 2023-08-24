@@ -1,52 +1,72 @@
-.articles-logo-container {
-	display: flex;
-	justify-content: left;
-	padding-top: 25px;
+.work-logo-container {
+    display: flex;
+    justify-content: left;
+    padding-top: 25px;
 }
 
-.articles-logo {
-	display: flex;
-	position: fixed;
-	border: 1px solid white;
-	border-radius: 50%;
-	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-	top: 4vh;
+.work-logo {
+    display: flex;
+    position: fixed;
+    border: 1px solid white;
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    top: 4vh;
 }
 
-.articles-main-container {
-	display: flex;
-	flex-direction: column;
-	height: 100%;
-	margin: 0;
-	padding-top: 120px;
+.work-main-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    padding-top: 120px;
 }
 
-.articles-container {
-	display: flex;
-	flex-direction: column;
+.work-subtitle {
+	margin-bottom: 25px !important;
 }
 
-.articles-wrapper {
-	padding-top: 50px;
-	padding-bottom: 50px;
-	display: flex;
-	flex-direction: column;
+/* Custom styles for the vertical timeline */
+.vertical-timeline-element-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, .08), 0 3px 0 4px rgba(0, 0, 0, .05);
+    background-color: white; /* To override the blue color */
 }
 
-.articles-article {
-	padding-top: 0px;
-	padding-left: 35px;
-	padding-bottom: 20px;
-	border-left: 2px solid #f4f4f5;
-	width: 100%;
+.vertical-timeline-element-content {
+	background: var(--color-gray-800);
+	color: white;
 }
 
-@media (max-width: 1024px) {
-	.articles-title {
-		width: 100% !important;
-	}
+/* Responsive styling */
+@media only screen and (max-width: 1024px) {
+    .work-title {
+        width: 100% !important;
+    }
 
-	.articles-subtitle {
-		width: 100% !important;
-	}
+    .work-subtitle {
+        width: 100% !important;
+    }
+}
+
+@media only screen and (max-width: 1170px) {
+    .react-vertical-timeline-element-content {
+        margin-left: 60px;
+    }
+
+    .react-vertical-timeline-element-icon {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .react-vertical-timeline-element-content {
+        margin-left: 0;
+    }
+
+    .react-vertical-timeline-element-icon {
+        display: none;
+    }
 }
