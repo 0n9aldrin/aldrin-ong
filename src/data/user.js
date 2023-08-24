@@ -60,6 +60,7 @@ const INFO = {
 				date: "May 2023 - Aug 2023",
 				description:
 					"Spearheaded the development of a high-visibility AWS console feature, enhancing usability metrics by 20%, and significantly optimized backend latency and code quality.",
+				bullet: "• Launched high-visibility AWS feature improving customer usability by 20%\n• Reduced P90 user request latency by 86% through effective multithreading\n• Deployed 20,000+ lines of secure code with 100% test coverage, benefiting 3 million+ users",
 				longDescription:
 					"Spearheaded the development of a high-visibility AWS console feature, enhancing usability metrics by 20%, and significantly optimized backend latency and code quality. Spearheaded the development of a high-visibility AWS console feature, enhancing usability metrics by 20%, and significantly optimized backend latency and code quality. Spearheaded the development of a high-visibility AWS console feature, enhancing usability metrics by 20%, and significantly optimized backend latency and code quality.",
 				logo: `${process.env.PUBLIC_URL}/work/aws.png`,
@@ -81,6 +82,7 @@ const INFO = {
 				date: "May 2022 - Dec 2022",
 				description:
 					"Championed user acquisition strategies resulting in a 530% surge in new sign-ups, while steering cross-functional teams to prioritize and successfully launch three strategic products.",
+				bullet: "• Enabled 530% increase in new users by executing sign-up flow improvements \n• Lead cross-functional teams of 12 to prioritize and pursue highest impact opportunities \n• Defined and owned delivery (SDLC), from concept to launch, for 3 key strategic products",
 				longDescription:
 					"Spearheaded the development of a high-visibility AWS console feature, enhancing usability metrics by 20%, and significantly optimized backend latency and code quality. Spearheaded the development of a high-visibility AWS console feature, enhancing usability metrics by 20%, and significantly optimized backend latency and code quality. Spearheaded the development of a high-visibility AWS console feature, enhancing usability metrics by 20%, and significantly optimized backend latency and code quality.",
 				logo: `${process.env.PUBLIC_URL}/work/jetzy.png`,
@@ -101,6 +103,7 @@ const INFO = {
 				date: "Jun 2019 - Jan 2021",
 				description:
 					"Launched and managed a tennis-centric platform connecting coaches and students, securing a top-three trending spot on Google Play Store and gaining endorsement from the Indonesian Tennis Association.",
+				bullet: "• Founded an app that connects tennis coaches with students and is a one-stop tennis platform \n• Received 500+ downloads and was #3 trending on Google Play Store for 3 months \n• Endorsed by Indonesian Tennis Association and reported by 10+ news agencies",
 				longDescription:
 					"Spearheaded the development of a high-visibility AWS console feature, enhancing usability metrics by 20%, and significantly optimized backend latency and code quality. Spearheaded the development of a high-visibility AWS console feature, enhancing usability metrics by 20%, and significantly optimized backend latency and code quality. Spearheaded the development of a high-visibility AWS console feature, enhancing usability metrics by 20%, and significantly optimized backend latency and code quality.",
 				logo: `${process.env.PUBLIC_URL}/work/trainme.png`,
@@ -114,9 +117,24 @@ const INFO = {
 				date: "Jun 2019 - Jan 2021",
 				description:
 					"Launched and managed a tennis-centric platform connecting coaches and students, securing a top-three trending spot on Google Play Store and gaining endorsement from the Indonesian Tennis Association.",
+				bullet: "• Drove the ideation to launch process of a high-visibility full-stack feature within the AWS console, leading to a 20% improvement in customer usability and customer satisfaction metrics across the global userbase • Reduced the P90 latency of user requests by 86% through the implementation of effective multithreading • Leveraged Java, RESTful APIs, and AWS specific services such as Lambda, Route53, WAF, and Elastic Search for back-end development, while utilizing React, TypeScript, and CSS for front-end • Implemented over 20,000+ lines of efficient, scalable, and high-security code in production, ensuring 100% test coverage, thereby significantly improving user experience of over 3 million AWS customers globally",
 				longDescription:
 					"Spearheaded the development of a high-visibility AWS console feature, enhancing usability metrics by 20%, and significantly optimized backend latency and code quality. Spearheaded the development of a high-visibility AWS console feature, enhancing usability metrics by 20%, and significantly optimized backend latency and code quality. Spearheaded the development of a high-visibility AWS console feature, enhancing usability metrics by 20%, and significantly optimized backend latency and code quality.",
-				logo: `${process.env.PUBLIC_URL}/work/trainme.png`,
+				logo: `${process.env.PUBLIC_URL}/work/faire.png`,
+				location: "Jakarta, Indonesia",
+				url: "trainme.com/",
+				skills: ["Android Studio", "PHP", "Firebase"],
+			},
+			{
+				title: "Ice House",
+				role: "Junior Software Engineer",
+				date: "Jun 2020 - July 2020",
+				description:
+					"Launched and managed a tennis-centric platform connecting coaches and students, securing a top-three trending spot on Google Play Store and gaining endorsement from the Indonesian Tennis Association.",
+				bullet: "• Conducted research resulting in a 700% increase in adoption of declarative programming in client projects \n• Built 3 prototype apps using Declarative Programming (Android Jetpack/Flutter) for C-suite management \n• Implemented MVVM with Firebase back-end/Google Analytics and used Agile development life-cycle",
+				longDescription:
+					"Spearheaded the development of a high-visibility AWS console feature, enhancing usability metrics by 20%, and significantly optimized backend latency and code quality. Spearheaded the development of a high-visibility AWS console feature, enhancing usability metrics by 20%, and significantly optimized backend latency and code quality. Spearheaded the development of a high-visibility AWS console feature, enhancing usability metrics by 20%, and significantly optimized backend latency and code quality.",
+				logo: `${process.env.PUBLIC_URL}/work/ice.jpeg`,
 				location: "Jakarta, Indonesia",
 				url: "trainme.com/",
 				skills: ["Android Studio", "PHP", "Firebase"],

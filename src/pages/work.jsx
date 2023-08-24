@@ -5,6 +5,11 @@ import {
 	VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
+import {
+	faMapMarkerAlt,
+	faExternalLinkAlt,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
@@ -58,6 +63,9 @@ const Work = () => {
 								<VerticalTimelineElement
 									key={index.toString()}
 									date={item.date}
+									onTimelineElementClick={() => {
+										console.log(item.title);
+									}}
 									iconStyle={{
 										background: "#2e3039",
 										color: "#2e3039",
@@ -74,13 +82,48 @@ const Work = () => {
 												width: "100%",
 												height: "100%",
 												objectFit: "contain",
+												borderRadius: "30px",
 											}}
 										/>
 									}
 								>
-									<h3>{item.title}</h3>
+									<h3 className="custom-underline">
+										{item.title}
+									</h3>
 									<h4>{item.role}</h4>
-									<p>{item.longDescription}</p>
+									<div className="work-header work-page-header">
+										<FontAwesomeIcon
+											icon={faMapMarkerAlt}
+											className="work-header-icon"
+										/>
+										<span className="work-header-text work-page-header-text">
+											{item.location}
+										</span>
+										<FontAwesomeIcon
+											icon={faExternalLinkAlt}
+											className="work-header-icon"
+										/>
+										<a
+											href={`https://${item.url}`}
+											target="_blank"
+											rel="noopener noreferrer"
+											className="work-header-text work-page-header-text"
+										>
+											{item.url}
+										</a>
+									</div>
+									{item.bullet
+										.split("\n")
+										.map((line, lineIndex) => (
+											<p key={lineIndex}>{line}</p>
+										))}
+									<div className="work-skills work-page-skills">
+										{item.skills.map((skill) => (
+											<span key={skill} className="skill">
+												{skill}
+											</span>
+										))}
+									</div>
 								</VerticalTimelineElement>
 							))}
 						</VerticalTimeline>

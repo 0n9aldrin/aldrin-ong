@@ -23,7 +23,7 @@ const Works = () => {
 
 	return (
 		<div className="works">
-			{INFO.work.items.map((workItem) => (
+			{INFO.work.items.slice(0, 3).map((workItem) => (
 				<div key={workItem.title}>
 					<div
 						className={`work ${

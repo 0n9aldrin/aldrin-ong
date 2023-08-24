@@ -39,8 +39,34 @@
 .vertical-timeline-element-content {
 	background: var(--color-gray-800);
 	color: white;
+	cursor: pointer;
 }
 
+.vertical-timeline-element-content:hover {
+	background: var(--color-gray-700);
+}
+
+.custom-underline {
+    border-bottom: 2px solid var(--link-color); /* Choose your color */
+    display: inline-block; /* To make sure the border/underline only takes the width of the content */
+	margin-bottom: 0px;
+}
+
+.work-page-header a {
+	color: white;
+}
+
+.work-page-header-text {
+	color: white;
+}
+
+.work-page-header-text a{
+	color: white;
+}
+
+.work-page-skills {
+	margin-top: 10px;
+}
 /* Responsive styling */
 @media only screen and (max-width: 1024px) {
     .work-title {
