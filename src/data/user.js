@@ -50,9 +50,9 @@ const INFO = {
 	},
 
 	work: {
-		title: "My work experience inspiring the next generation of innovators.",
+		title: "Empowering Tomorrow's Innovators: My Professional Journey",
 		description:
-			"Chronological collection of my long-form thoughts on programming, leadership, product design, and more.",
+			"Discover the path that took me from a curious kid mesmerized by Flutter videos in my room, to a hands-on internship at AWS. Dive into the details by tapping on the bubbles below!",
 		items: [
 			{
 				title: "Amazon Web Services",
