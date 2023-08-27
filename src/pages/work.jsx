@@ -165,11 +165,12 @@ const Work = () => {
 											<FontAwesomeIcon icon={faTimes} />
 										</button>
 										<div className="work-modal-content">
-											<img
+											<div
 												className="work-modal-image"
-												src={selectedItem.image}
-												alt="Selected work logo"
-											/>
+												style={{
+													backgroundImage: `url(${selectedItem.image})`,
+												}}
+											></div>
 											<div className="work-modal-right-side">
 												<h3 className="custom-underline">
 													<span className="role-class">

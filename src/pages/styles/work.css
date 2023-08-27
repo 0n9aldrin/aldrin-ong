@@ -54,7 +54,7 @@
 }
 
 .custom-underline {
-    margin: 0;
+	margin: 0;
 }
 
 .title-class {
@@ -140,9 +140,13 @@
 }
 
 .work-modal-image {
-	width: 30%;
-	border-radius: 8px;
-}
+    width: 30%;
+    border-radius: 8px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-shrink: 0;  /* Prevents the div from shrinking */
+  }
 
 .work-modal-right-side {
 	margin-left: 20px;
