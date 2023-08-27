@@ -80,11 +80,12 @@
 
 /* Modal */
 .work-modal {
-    background: white;
+    background: var(--color-gray-900);
     padding: 20px;
     border-radius: 8px;
     width: 80%;
     max-width: 600px;
+    color: white;
 }
 
 .work-modal-inner {
@@ -93,14 +94,22 @@
 
 /* Close Button */
 .work-modal-close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: none;
-    border: none;
-    font-size: 18px;
-    cursor: pointer;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 30px; /* Set width */
+	height: 30px; /* Set height */
+	background-color: var(--color-gray-800);
+	border-radius: 50%; /* Adjusted to make it a circle */
+	border: none;
+	font-size: 15px;
+	line-height: 20px; /* Helps to center the text vertically */
+	text-align: center; /* Centers the text horizontally */
+	cursor: pointer;
+	color: white;
 }
+
+
 
 /* Modal Content */
 .work-modal-content {

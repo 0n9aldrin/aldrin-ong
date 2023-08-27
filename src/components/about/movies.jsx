@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 
 import INFO from "../../data/user";
 
@@ -9,6 +9,25 @@ import { faTimes } from "@fortawesome/free-solid-svg-icons";
 const Movies = () => {
 	const [isOpen, setIsOpen] = useState(false);
 	const [selectedMovie, setSelectedMovie] = useState(null);
+	const modalRef = useRef(null);
+
+	useEffect(() => {
+		function handleClickOutside(event) {
+			if (modalRef.current && !modalRef.current.contains(event.target)) {
+				setIsOpen(false);
+			}
+		}
+
+		if (isOpen) {
+			document.addEventListener("mousedown", handleClickOutside);
+		} else {
+			document.removeEventListener("mousedown", handleClickOutside);
+		}
+
+		return () => {
+			document.removeEventListener("mousedown", handleClickOutside);
+		};
+	}, [isOpen]);
 
 	return (
 		<div className="movies-container">
@@ -31,7 +50,7 @@ const Movies = () => {
 			))}
 			{isOpen && (
 				<div className="modal-overlay">
-					<div className="modal">
+					<div className="modal" ref={modalRef}>
 						<div className="modal-inner">
 							<button
 								className="modal-close"
@@ -58,7 +77,7 @@ const Movies = () => {
 									<p>{selectedMovie.description}</p>
 								</div>
 							</div>
-                            <p className="my-review">My Review</p>
+							<p className="my-review">My Review</p>
 							<p>Rating: {selectedMovie.rating}</p>
 							<p>{selectedMovie.review}</p>
 						</div>

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { Helmet } from "react-helmet";
 import {
 	VerticalTimeline,
@@ -25,6 +25,26 @@ import Resume from "../components/common/resume";
 const Work = () => {
 	const [isOpen, setIsOpen] = useState(false);
 	const [selectedItem, setSelectedItem] = useState(null);
+
+	const modalRef = useRef(null);
+
+	useEffect(() => {
+		function handleClickOutside(event) {
+			if (modalRef.current && !modalRef.current.contains(event.target)) {
+				setIsOpen(false);
+			}
+		}
+
+		if (isOpen) {
+			document.addEventListener("mousedown", handleClickOutside);
+		} else {
+			document.removeEventListener("mousedown", handleClickOutside);
+		}
+
+		return () => {
+			document.removeEventListener("mousedown", handleClickOutside);
+		};
+	}, [isOpen]);
 
 	useEffect(() => {
 		window.scrollTo(0, 0);
@@ -138,7 +158,7 @@ const Work = () => {
 						</VerticalTimeline>
 						{isOpen && selectedItem && (
 							<div className="work-modal-overlay">
-								<div className="work-modal">
+								<div className="work-modal" ref={modalRef}>
 									<div className="work-modal-inner">
 										<button
 											className="work-modal-close"
@@ -155,13 +175,13 @@ const Work = () => {
 											<div className="work-modal-right-side">
 												<h3>{selectedItem.title}</h3>
 												<h4>{selectedItem.role}</h4>
-												<p>{selectedItem.bullet}</p>
-												<div className="work-page-skills">
+												<p>{selectedItem.longDescription}</p>
+												<div className="work-skills work-page-skills">
 													{selectedItem.skills.map(
 														(skill) => (
 															<span
 																key={skill}
-																className="work-skill"
+																className="skill"
 															>
 																{skill}
 															</span>

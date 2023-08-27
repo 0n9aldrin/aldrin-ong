@@ -206,7 +206,7 @@ const Homepage = () => {
 								href={process.env.PUBLIC_URL + "/work"}
 								className="more-button"
 							>
-								View full resume
+								Explore My Journey
 							</a>
 						</div>
 						<h2 className="blogs-title">Blogs</h2>
