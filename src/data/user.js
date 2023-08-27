@@ -62,8 +62,9 @@ const INFO = {
 					"Spearheaded the development of a high-visibility AWS console feature, enhancing usability metrics by 20%, and significantly optimized backend latency and code quality.",
 				bullet: "• Launched high-visibility AWS feature improving customer usability by 20%\n• Reduced P90 user request latency by 86% through effective multithreading\n• Deployed 20,000+ lines of secure code with 100% test coverage, benefiting 3 million+ users",
 				longDescription:
-					"Spearheaded the development of a high-visibility AWS console feature, enhancing usability metrics by 20%, and significantly optimized backend latency and code quality. Spearheaded the development of a high-visibility AWS console feature, enhancing usability metrics by 20%, and significantly optimized backend latency and code quality. Spearheaded the development of a high-visibility AWS console feature, enhancing usability metrics by 20%, and significantly optimized backend latency and code quality.",
+					"• Drove the ideation to launch process of a high-visibility full-stack feature within the AWS console, leading to a 20% improvement in customer usability and customer satisfaction metrics across the global userbase \n• Reduced the P90 latency of user requests by 86% through the implementation of effective multithreading \n• Leveraged Java, RESTful APIs, and AWS specific services such as Lambda, Route53, WAF, and Elastic Search for back-end development, while utilizing React, TypeScript, and CSS for front-end \n• Implemented over 20,000+ lines of efficient, scalable, and high-security code in production, ensuring 100% test coverage, thereby significantly improving user experience of over 3 million AWS customers globally",
 				logo: `${process.env.PUBLIC_URL}/work/aws.png`,
+				image: `${process.env.PUBLIC_URL}/work/aws.jpg`,
 				location: "Seattle, WA",
 				url: "aws.amazon.com/",
 				skills: [
@@ -84,8 +85,9 @@ const INFO = {
 					"Championed user acquisition strategies resulting in a 530% surge in new sign-ups, while steering cross-functional teams to prioritize and successfully launch three strategic products.",
 				bullet: "• Enabled 530% increase in new users by executing sign-up flow improvements \n• Lead cross-functional teams of 12 to prioritize and pursue highest impact opportunities \n• Defined and owned delivery (SDLC), from concept to launch, for 3 key strategic products",
 				longDescription:
-					"Spearheaded the development of a high-visibility AWS console feature, enhancing usability metrics by 20%, and significantly optimized backend latency and code quality. Spearheaded the development of a high-visibility AWS console feature, enhancing usability metrics by 20%, and significantly optimized backend latency and code quality. Spearheaded the development of a high-visibility AWS console feature, enhancing usability metrics by 20%, and significantly optimized backend latency and code quality.",
+					"• Enabled 530% increase in new users by identifying and executing sign-up flow improvements \n• Lead cross-functional teams of 12 to prioritize, prototype, and pursue highest impact opportunities \n• Defined and owned delivery (SDLC), from concept to launch, for 3 key strategic products and technologies",
 				logo: `${process.env.PUBLIC_URL}/work/jetzy.png`,
+				image: `${process.env.PUBLIC_URL}/work/jetzy.jpeg`,
 				location: "New York City, NY",
 				url: "jetzyapp.com/",
 				skills: [
@@ -98,29 +100,16 @@ const INFO = {
 				],
 			},
 			{
-				title: "Trainme",
-				role: "Co-Founder & CTO",
-				date: "Jun 2019 - Jan 2021",
-				description:
-					"Launched and managed a tennis-centric platform connecting coaches and students, securing a top-three trending spot on Google Play Store and gaining endorsement from the Indonesian Tennis Association.",
-				bullet: "• Founded an app that connects tennis coaches with students and is a one-stop tennis platform \n• Received 500+ downloads and was #3 trending on Google Play Store for 3 months \n• Endorsed by Indonesian Tennis Association and reported by 10+ news agencies",
-				longDescription:
-					"Spearheaded the development of a high-visibility AWS console feature, enhancing usability metrics by 20%, and significantly optimized backend latency and code quality. Spearheaded the development of a high-visibility AWS console feature, enhancing usability metrics by 20%, and significantly optimized backend latency and code quality. Spearheaded the development of a high-visibility AWS console feature, enhancing usability metrics by 20%, and significantly optimized backend latency and code quality.",
-				logo: `${process.env.PUBLIC_URL}/work/trainme.png`,
-				location: "Jakarta, Indonesia",
-				url: "trainme.com/",
-				skills: ["Android Studio", "PHP", "Firebase"],
-			},
-			{
 				title: "Faire",
 				role: "Project Manager",
-				date: "Jun 2019 - Jan 2021",
+				date: "Jan 2023 - May 2023",
 				description:
 					"Launched and managed a tennis-centric platform connecting coaches and students, securing a top-three trending spot on Google Play Store and gaining endorsement from the Indonesian Tennis Association.",
 				bullet: "• Sourced 9 new clients through proactive cold-emailing efforts, demonstrating exceptional resilience and business development skills \n• Led a cross-functional team of 6 consultants, driving results for a Series G wholesale e-commerce startup \n • Conducted comprehensive competitive analysis, identifying key growth opportunities and informing market expansion strategy \n • Streamlined operations and improved efficiency, resulting in a 15% increase in project delivery speed",
 				longDescription:
-					"Spearheaded the development of a high-visibility AWS console feature, enhancing usability metrics by 20%, and significantly optimized backend latency and code quality. Spearheaded the development of a high-visibility AWS console feature, enhancing usability metrics by 20%, and significantly optimized backend latency and code quality. Spearheaded the development of a high-visibility AWS console feature, enhancing usability metrics by 20%, and significantly optimized backend latency and code quality.",
+					"• Sourced 9 new clients through proactive cold-emailing efforts, demonstrating exceptional resilience and business development skills \n• Led a cross-functional team of 6 consultants, driving results for a Series G wholesale e-commerce startup \n• Conducted comprehensive competitive analysis, identifying key growth opportunities and informing market expansion strategy \n• Streamlined operations and improved efficiency, resulting in a 15% increase in project delivery speed",
 				logo: `${process.env.PUBLIC_URL}/work/faire.png`,
+				image: `${process.env.PUBLIC_URL}/work/faire.jpeg`,
 				location: "San Francisco, CA",
 				url: "faire.com/",
 				skills: [
@@ -139,8 +128,9 @@ const INFO = {
 					"Launched and managed a tennis-centric platform connecting coaches and students, securing a top-three trending spot on Google Play Store and gaining endorsement from the Indonesian Tennis Association.",
 				bullet: "• Identified customer needs to provide customer service to 100+ clients daily with 90% customer satisfaction \n• Managed and processed 1000+ sensitive student records, requiring data entry and attention to detail",
 				longDescription:
-					"Spearheaded the development of a high-visibility AWS console feature, enhancing usability metrics by 20%, and significantly optimized backend latency and code quality. Spearheaded the development of a high-visibility AWS console feature, enhancing usability metrics by 20%, and significantly optimized backend latency and code quality. Spearheaded the development of a high-visibility AWS console feature, enhancing usability metrics by 20%, and significantly optimized backend latency and code quality.",
+					"• Identified customer needs to provide customer service to 100+ clients daily with 90% customer satisfaction \n• Managed and processed 1000+ sensitive student records, requiring data entry and attention to detail",
 				logo: `${process.env.PUBLIC_URL}/work/berkeley.png`,
+				image: `${process.env.PUBLIC_URL}/work/berkeley.jpg`,
 				location: "Berkeley, CA",
 				url: "cal1card.berkeley.edu",
 				skills: [
@@ -151,6 +141,21 @@ const INFO = {
 				],
 			},
 			{
+				title: "Trainme",
+				role: "Co-Founder & CTO",
+				date: "Jun 2019 - Jan 2021",
+				description:
+					"Launched and managed a tennis-centric platform connecting coaches and students, securing a top-three trending spot on Google Play Store and gaining endorsement from the Indonesian Tennis Association.",
+				bullet: "• Founded an app that connects tennis coaches with students and is a one-stop tennis platform \n• Received 500+ downloads and was #3 trending on Google Play Store for 3 months \n• Endorsed by Indonesian Tennis Association and reported by 10+ news agencies",
+				longDescription:
+					"• Founded an app that connects tennis coaches with students and is a one-stop platform for tennis enthusiasts \n• Received 500+ downloads, #3 trending on Google Play Store \n• Endorsed by Indonesian Tennis Association",
+				logo: `${process.env.PUBLIC_URL}/work/trainme.png`,
+				image: `${process.env.PUBLIC_URL}/work/trainme.jpg`,
+				location: "Jakarta, Indonesia",
+				url: "trainme.com/",
+				skills: ["Android Studio", "PHP", "Firebase"],
+			},
+			{
 				title: "Ice House",
 				role: "Junior Software Engineer",
 				date: "Jun 2020 - July 2020",
@@ -158,8 +163,9 @@ const INFO = {
 					"Conducted research on Declarative Programming, enhancing client projects. Developed prototype apps using cutting-edge technologies. Implemented modern architectural patterns and Agile methodologies.Conducted research on Declarative Programming, enhancing client projects. Developed prototype apps using cutting-edge technologies. Implemented modern architectural patterns and Agile methodologies.",
 				bullet: "• Conducted research resulting in a 700% increase in adoption of declarative programming in client projects \n• Built 3 prototype apps using Declarative Programming (Android Jetpack/Flutter) for C-suite management \n• Implemented MVVM with Firebase back-end/Google Analytics and used Agile development life-cycle",
 				longDescription:
-					"Spearheaded the development of a high-visibility AWS console feature, enhancing usability metrics by 20%, and significantly optimized backend latency and code quality. Spearheaded the development of a high-visibility AWS console feature, enhancing usability metrics by 20%, and significantly optimized backend latency and code quality. Spearheaded the development of a high-visibility AWS console feature, enhancing usability metrics by 20%, and significantly optimized backend latency and code quality.",
+					"• Conducted research resulting in a 700% increase in adoption of declarative programming in client projects \n• Built 3 prototype apps using Declarative Programming (Android Jetpack/Flutter) for C-suite management \n• Implemented MVVM with Firebase back-end/Google Analytics and used Agile development life-cycle",
 				logo: `${process.env.PUBLIC_URL}/work/ice.jpeg`,
+				image: `${process.env.PUBLIC_URL}/work/ice.png`,
 				location: "Jakarta, Indonesia",
 				url: "icehousecorp.com/",
 				skills: [
@@ -176,10 +182,11 @@ const INFO = {
 				date: "Sep 2019 - Jun 2021",
 				description:
 					"Developed an inclusive app for the Indonesian deaf community. Led app development efforts, enhancing user experience. Empowered the deaf community with accessible technology and education.",
-				bullet: "• Developed an inclusive app for the Indonesian deaf community. Led app development efforts, enhancing user experience. \n • Empowered the deaf community with accessible technology and education.",
+				bullet: "• Developed an inclusive app for the Indonesian deaf community. \n• Led app development efforts, enhancing user experience. \n • Empowered the deaf community with accessible technology and education.",
 				longDescription:
-					"Spearheaded the development of a high-visibility AWS console feature, enhancing usability metrics by 20%, and significantly optimized backend latency and code quality. Spearheaded the development of a high-visibility AWS console feature, enhancing usability metrics by 20%, and significantly optimized backend latency and code quality. Spearheaded the development of a high-visibility AWS console feature, enhancing usability metrics by 20%, and significantly optimized backend latency and code quality.",
+					"• Developed an inclusive app for the Indonesian deaf community. \n• Led app development efforts, enhancing user experience. \n• Empowered the deaf community with accessible technology and education. \n• Raised $2000+ to fund COVID relief efforts for the deaf community.",
 				logo: `${process.env.PUBLIC_URL}/work/volume.jpeg`,
+				image: `${process.env.PUBLIC_URL}/work/volume.jpg`,
 				location: "Jakarta, Indonesia",
 				url: "volumeup.com/",
 				skills: [
@@ -197,8 +204,9 @@ const INFO = {
 					"Consulted on game-based loyalty program, increasing user retention. Conducted competitor analysis, user research, and A/B testing to advise on product differentiation.",
 				bullet: "• Advised PMs on game-based loyalty program for “GOJEK marketplace” that saw a 42% increase in retention \n• Performed competitor analysis, user research (50 surveys), A/B testing and advised on product differentiation",
 				longDescription:
-					"Spearheaded the development of a high-visibility AWS console feature, enhancing usability metrics by 20%, and significantly optimized backend latency and code quality. Spearheaded the development of a high-visibility AWS console feature, enhancing usability metrics by 20%, and significantly optimized backend latency and code quality. Spearheaded the development of a high-visibility AWS console feature, enhancing usability metrics by 20%, and significantly optimized backend latency and code quality.",
+					"• Advised PMs on game-based loyalty program for “GOJEK marketplace” that saw a 42% increase in retention \n• Performed competitor analysis, user research (50 surveys), A/B testing and advised on product differentiation",
 				logo: `${process.env.PUBLIC_URL}/work/gojek.jpeg`,
+				image: `${process.env.PUBLIC_URL}/work/gojek.svg`,
 				location: "Jakarta, Indonesia",
 				url: "gojek.com/",
 				skills: [

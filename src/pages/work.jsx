@@ -116,11 +116,9 @@ const Work = () => {
 										/>
 									}
 								>
-									<h3 className="custom-underline">
-										{item.title}
-									</h3>
-									<h4>{item.role}</h4>
-									<div className="work-header work-page-header">
+									<h4 className="item-role">{item.role}</h4>
+									<h3 className="item-title">{item.title}</h3>
+									{/* <div className="work-header work-page-header">
 										<FontAwesomeIcon
 											icon={faMapMarkerAlt}
 											className="work-header-icon"
@@ -152,7 +150,7 @@ const Work = () => {
 												{skill}
 											</span>
 										))}
-									</div>
+									</div> */}
 								</VerticalTimelineElement>
 							))}
 						</VerticalTimeline>
@@ -169,13 +167,52 @@ const Work = () => {
 										<div className="work-modal-content">
 											<img
 												className="work-modal-image"
-												src={selectedItem.logo}
+												src={selectedItem.image}
 												alt="Selected work logo"
 											/>
 											<div className="work-modal-right-side">
-												<h3>{selectedItem.title}</h3>
-												<h4>{selectedItem.role}</h4>
-												<p>{selectedItem.longDescription}</p>
+												<h3 className="custom-underline">
+													<span className="role-class">
+														{selectedItem.role}
+													</span>
+													<span> @ </span>
+													<a
+														href={`https://${selectedItem.url}`}
+														target="_blank"
+														rel="noopener noreferrer"
+														className="title-class"
+													>
+														{selectedItem.title}
+													</a>
+												</h3>
+												<div className="work-header work-page-header">
+													<FontAwesomeIcon
+														icon={faMapMarkerAlt}
+														className="work-header-icon"
+													/>
+													<span className="work-header-text work-page-header-text">
+														{selectedItem.location}
+													</span>
+													<FontAwesomeIcon
+														icon={faExternalLinkAlt}
+														className="work-header-icon"
+													/>
+													<a
+														href={`https://${selectedItem.url}`}
+														target="_blank"
+														rel="noopener noreferrer"
+														className="work-header-text work-page-header-text"
+													>
+														{selectedItem.url}
+													</a>
+												</div>
+												{selectedItem.longDescription
+													.split("\n")
+													.map((line, lineIndex) => (
+														<p key={lineIndex}>
+															{line}
+														</p>
+													))}
 												<div className="work-skills work-page-skills">
 													{selectedItem.skills.map(
 														(skill) => (

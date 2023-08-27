@@ -1,39 +1,46 @@
 .work-logo-container {
-    display: flex;
-    justify-content: left;
-    padding-top: 25px;
+	display: flex;
+	justify-content: left;
+	padding-top: 25px;
 }
 
 .work-logo {
-    display: flex;
-    position: fixed;
-    border: 1px solid white;
-    border-radius: 50%;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-    top: 4vh;
-    z-index: 1000;
+	display: flex;
+	position: fixed;
+	border: 1px solid white;
+	border-radius: 50%;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+	top: 4vh;
+	z-index: 1000;
 }
 
 .work-main-container {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    margin: 0;
-    padding-top: 120px;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	margin: 0;
+	padding-top: 120px;
 }
 
 .work-subtitle {
 	margin-bottom: 25px !important;
-    width: 100%;
+	width: 100%;
 }
 
 /* Custom styles for the vertical timeline */
 .vertical-timeline-element-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, .08), 0 3px 0 4px rgba(0, 0, 0, .05);
-    background-color: white; /* To override the blue color */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08),
+		0 3px 0 4px rgba(0, 0, 0, 0.05);
+	background-color: white; /* To override the blue color */
+}
+
+.vertical-timeline {
+	width: 100%;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 .vertical-timeline-element-content {
@@ -47,9 +54,24 @@
 }
 
 .custom-underline {
-    border-bottom: 2px solid var(--link-color); /* Choose your color */
-    display: inline-block; /* To make sure the border/underline only takes the width of the content */
-	margin-bottom: 0px;
+    margin: 0;
+}
+
+.title-class {
+	color: var(--link-color);
+	/* Additional styles for the title here */
+}
+
+.item-title {
+	color: var(--link-color);
+	font-family: var(--secondary-font);
+	margin: 0px;
+	font-size: 16px;
+}
+
+.item-role {
+	font-size: 24px;
+	margin: 0px;
 }
 
 .work-page-header a {
@@ -60,36 +82,38 @@
 	color: white;
 }
 
-.work-page-header-text a{
+.work-page-header-text a {
 	color: white;
 }
 
 /* Modal Overlay */
 .work-modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    z-index: 9999;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	z-index: 9999;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 /* Modal */
 .work-modal {
-    background: var(--color-gray-900);
-    padding: 20px;
-    border-radius: 8px;
-    width: 80%;
-    max-width: 600px;
-    color: white;
+	background: var(--color-gray-900);
+	padding: 20px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	border-radius: 8px;
+	width: 75%;
+	max-width: 80%;
+	color: white;
 }
 
 .work-modal-inner {
-    position: relative;
+	position: relative;
 }
 
 /* Close Button */
@@ -109,21 +133,19 @@
 	color: white;
 }
 
-
-
 /* Modal Content */
 .work-modal-content {
-    display: flex;
-    flex-direction: row;
+	display: flex;
+	flex-direction: row;
 }
 
 .work-modal-image {
-    width: 30%;
-    border-radius: 8px;
+	width: 30%;
+	border-radius: 8px;
 }
 
 .work-modal-right-side {
-    margin-left: 20px;
+	margin-left: 20px;
 }
 
 .work-page-skills {
@@ -131,32 +153,32 @@
 }
 /* Responsive styling */
 @media only screen and (max-width: 1024px) {
-    .work-title {
-        width: 100% !important;
-    }
+	.work-title {
+		width: 100% !important;
+	}
 
-    .work-subtitle {
-        width: 100% !important;
-    }
+	.work-subtitle {
+		width: 100% !important;
+	}
 }
 
 @media only screen and (max-width: 1170px) {
-    .react-vertical-timeline-element-content {
-        margin-left: 60px;
-    }
+	.react-vertical-timeline-element-content {
+		margin-left: 60px;
+	}
 
-    .react-vertical-timeline-element-icon {
-        width: 40px;
-        height: 40px;
-    }
+	.react-vertical-timeline-element-icon {
+		width: 40px;
+		height: 40px;
+	}
 }
 
 @media only screen and (max-width: 800px) {
-    .react-vertical-timeline-element-content {
-        margin-left: 0;
-    }
+	.react-vertical-timeline-element-content {
+		margin-left: 0;
+	}
 
-    .react-vertical-timeline-element-icon {
-        display: none;
-    }
+	.react-vertical-timeline-element-icon {
+		display: none;
+	}
 }
