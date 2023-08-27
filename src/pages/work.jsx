@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 import {
 	VerticalTimeline,
@@ -8,6 +8,7 @@ import "react-vertical-timeline-component/style.min.css";
 import {
 	faMapMarkerAlt,
 	faExternalLinkAlt,
+	faTimes,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -22,9 +23,17 @@ import "./styles/work.css"; // Renamed the CSS file.
 import Resume from "../components/common/resume";
 
 const Work = () => {
+	const [isOpen, setIsOpen] = useState(false);
+	const [selectedItem, setSelectedItem] = useState(null);
+
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
+
+	const handleElementClick = (item) => {
+		setIsOpen(true);
+		setSelectedItem(item);
+	};
 
 	const currentSEO = SEO.find((item) => item.page === "articles"); // Changed to "work"
 
@@ -64,7 +73,7 @@ const Work = () => {
 									key={index.toString()}
 									date={item.date}
 									onTimelineElementClick={() => {
-										console.log(item.title);
+										handleElementClick(item);
 									}}
 									iconStyle={{
 										background: "#2e3039",
@@ -127,6 +136,44 @@ const Work = () => {
 								</VerticalTimelineElement>
 							))}
 						</VerticalTimeline>
+						{isOpen && selectedItem && (
+							<div className="work-modal-overlay">
+								<div className="work-modal">
+									<div className="work-modal-inner">
+										<button
+											className="work-modal-close"
+											onClick={() => setIsOpen(false)}
+										>
+											<FontAwesomeIcon icon={faTimes} />
+										</button>
+										<div className="work-modal-content">
+											<img
+												className="work-modal-image"
+												src={selectedItem.logo}
+												alt="Selected work logo"
+											/>
+											<div className="work-modal-right-side">
+												<h3>{selectedItem.title}</h3>
+												<h4>{selectedItem.role}</h4>
+												<p>{selectedItem.bullet}</p>
+												<div className="work-page-skills">
+													{selectedItem.skills.map(
+														(skill) => (
+															<span
+																key={skill}
+																className="work-skill"
+															>
+																{skill}
+															</span>
+														)
+													)}
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						)}
 					</div>
 					<div className="page-footer">
 						<Footer />
