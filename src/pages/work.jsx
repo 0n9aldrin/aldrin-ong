@@ -118,39 +118,6 @@ const Work = () => {
 								>
 									<h4 className="item-role">{item.role}</h4>
 									<h3 className="item-title">{item.title}</h3>
-									{/* <div className="work-header work-page-header">
-										<FontAwesomeIcon
-											icon={faMapMarkerAlt}
-											className="work-header-icon"
-										/>
-										<span className="work-header-text work-page-header-text">
-											{item.location}
-										</span>
-										<FontAwesomeIcon
-											icon={faExternalLinkAlt}
-											className="work-header-icon"
-										/>
-										<a
-											href={`https://${item.url}`}
-											target="_blank"
-											rel="noopener noreferrer"
-											className="work-header-text work-page-header-text"
-										>
-											{item.url}
-										</a>
-									</div>
-									{item.bullet
-										.split("\n")
-										.map((line, lineIndex) => (
-											<p key={lineIndex}>{line}</p>
-										))}
-									<div className="work-skills work-page-skills">
-										{item.skills.map((skill) => (
-											<span key={skill} className="skill">
-												{skill}
-											</span>
-										))}
-									</div> */}
 								</VerticalTimelineElement>
 							))}
 						</VerticalTimeline>

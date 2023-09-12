@@ -104,8 +104,6 @@
 .work-modal {
 	background: var(--color-gray-900);
 	padding: 20px;
-	padding-top: 40px;
-	padding-bottom: 40px;
 	border-radius: 8px;
 	width: 75%;
 	max-width: 80%;
@@ -140,13 +138,12 @@
 }
 
 .work-modal-image {
-    width: 30%;
-    border-radius: 8px;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    flex-shrink: 0;  /* Prevents the div from shrinking */
-  }
+	width: 30%;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	flex-shrink: 0; /* Prevents the div from shrinking */
+}
 
 .work-modal-right-side {
 	margin-left: 20px;
