@@ -6,6 +6,7 @@ function article_1() {
 		title: "Berkeley Consulting Clubs (Part 1): How to get into a “competitive” consulting club at Berkeley?",
 		description:
 			"How to get into a competitive consulting club at Berkeley? Berkeley consulting clubs are a game and you need to play the game well to win!",
+		url: "https://medium.com/@0n9aldrin/berkeley-consulting-clubs-part-1-an-insiders-guide-to-breaking-in-6e88b50eef29",
 		keywords: [
 			"Consulting",
 			"Berkeley",
@@ -235,6 +236,7 @@ function article_2() {
 			"AI is transforming all industries, from improving patient outcomes to streamlining operations. Discover how ChatGPT can be used in ways that are not so obvious.",
 		style: ``,
 		keywords: ["ChatGPT", "AI", "Consulting", "JavaScript", "Berkeley"],
+		url: "https://medium.com/@0n9aldrin/how-to-use-chatgpt-to-source-leads-for-your-consulting-club-a-guide-from-a-berkeley-cs-student-780712ad6e52",
 		body: (
 			<React.Fragment>
 				<h1>Content of article 2</h1>
