@@ -325,6 +325,15 @@ const INFO = {
 
 	projects: [
 		{
+			title: "Lookout Safety",
+			description:
+				"A React Native application designed to enhance the interaction between course staff and students during large live lectures.",
+			logo: `${process.env.PUBLIC_URL}/projects/lookout.png`,
+			linkText: "View Project",
+			link: "https://apps.apple.com/ca/app/lookout-safety/id6469295337?platform=iphone",
+		},
+
+		{
 			title: "Lecturely",
 			description:
 				"A React Native application designed to enhance the interaction between course staff and students during large live lectures.",
