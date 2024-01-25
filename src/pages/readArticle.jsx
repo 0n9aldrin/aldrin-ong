@@ -51,7 +51,7 @@ const ReadArticle = () => {
 		return (
 			<React.Fragment>
 				<div className="read-article-page-content">
-					<div className="content-wrapper">
+					<div className="read-article-header">
 						<NavBar />
 						<div className="read-article-logo-container">
 							<div className="read-article-logo">
