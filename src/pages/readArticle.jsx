@@ -52,16 +52,20 @@ const ReadArticle = () => {
 			<React.Fragment>
 				<div className="read-article-page-content">
 					<NavBar />
-					<div className="read-article-logo-container">
-						<div className="read-article-logo">
-							<Logo width={46} />
+					<div className="content-wrapper">
+						<div className="read-article-logo-container">
+							<div className="read-article-logo">
+								<Logo width={46} />
+							</div>
 						</div>
 					</div>
-					<NotionRenderer
-						recordMap={recordMap}
-						fullPage={true}
-						darkMode={true}
-					/>
+					<div className="notion-wrapper">
+						<NotionRenderer
+							recordMap={recordMap}
+							fullPage={true}
+							darkMode={true}
+						/>
+					</div>
 				</div>
 			</React.Fragment>
 		);
