@@ -71,7 +71,7 @@ const ReadArticle = () => {
 					<meta
 						name="image"
 						property="og:image"
-						content={article().image || "default-image-url"}
+						content={article().image || process.env.PUBLIC_URL + "cover.png"}
 					/>
 					<meta name="type" property="og:type" content="article" />
 				</Helmet>
@@ -114,6 +114,23 @@ const ReadArticle = () => {
 						name="keywords"
 						content={article().keywords.join(", ")}
 					/>
+					{/* Open Graph tags */}
+					<meta
+						name="title"
+						property="og:title"
+						content={`${article().title} | ${INFO.main.title}`}
+					/>
+					<meta
+						name="description"
+						property="og:description"
+						content={article().description}
+					/>
+					<meta
+						name="image"
+						property="og:image"
+						content={article().image || process.env.PUBLIC_URL + "cover.png"}
+					/>
+					<meta name="type" property="og:type" content="article" />
 				</Helmet>
 
 				<div className="page-content">
