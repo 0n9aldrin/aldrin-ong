@@ -243,6 +243,13 @@ function article_2() {
 					<iframe
 						src="https://v2-embednotion.com/Transforming-Mobile-Safety-A-Software-Engineering-Journey-with-Lookout-Safety-fa6b2075a481465caf8262a912ac144d?pvs=4"
 						title="Mobile Safety Software Engineering Journey"
+						style={{
+							width: '100%',
+							height: '500px',
+							border: '2px solid #ccc',
+							borderRadius: '10px',
+							//padding: 'none'  Note: 'none' is not a valid value for padding. Use '0' if you want no padding.
+						  }}
 					></iframe>
 				</h1>
 			</React.Fragment>
