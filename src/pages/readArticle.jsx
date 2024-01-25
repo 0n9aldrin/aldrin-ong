@@ -63,7 +63,7 @@ const ReadArticle = () => {
 						<NotionRenderer
 							recordMap={recordMap}
 							fullPage={true}
-							darkMode={true}
+							darkMode={false}
 						/>
 					</div>
 					<div className="content-wrapper">
