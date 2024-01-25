@@ -70,22 +70,11 @@ const ReadArticle = () => {
 						</div>
 
 						<div className="read-article-container">
-							<div className="read-article-back">
-								<img
-									src="../back-button.png"
-									alt="back"
-									className="read-article-back-button"
-									onClick={() => navigate(-1)}
-								/>
-							</div>
-
-							<div className="read-article-wrapper">
-								<NotionRenderer
-									recordMap={recordMap}
-									fullPage={true}
-									darkMode={true}
-								/>
-							</div>
+							<NotionRenderer
+								recordMap={recordMap}
+								fullPage={true}
+								darkMode={true}
+							/>
 						</div>
 						<div className="page-footer">
 							<Footer />
