@@ -66,9 +66,11 @@ const ReadArticle = () => {
 							darkMode={true}
 						/>
 					</div>
-					<div className="page-footer">
+					<div className="content-wrapper">
+						<div className="page-footer">
 							<Footer />
 						</div>
+					</div>
 				</div>
 			</React.Fragment>
 		);
