@@ -27,21 +27,21 @@ const ReadArticle = () => {
 	const isNotionPage = article().notionPageId !== undefined;
 
 	useEffect(() => {
-        window.scrollTo(0, 0);
-        if (isNotionPage) {
-            fetch(`/api/notion?pageId=${article().notionPageId}`)
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Network response was not ok');
-                    }
-                    return response.json();
-                })
-                .then(data => setRecordMap(data))
-                .catch(error => {
-                    console.error('Error fetching Notion data:', error);
-                });
-        }
-    }, [article, isNotionPage]);
+		window.scrollTo(0, 0);
+		if (isNotionPage) {
+			fetch(`/api/notion?pageId=${article().notionPageId}`)
+				.then((response) => {
+					if (!response.ok) {
+						throw new Error("Network response was not ok");
+					}
+					return response.json();
+				})
+				.then((data) => setRecordMap(data))
+				.catch((error) => {
+					console.error("Error fetching Notion data:", error);
+				});
+		}
+	}, [article, isNotionPage]);
 
 	ArticleStyle = styled.div`
 		${article().style}
@@ -49,11 +49,62 @@ const ReadArticle = () => {
 
 	if (isNotionPage && recordMap) {
 		return (
-			<NotionRenderer
-				recordMap={recordMap}
-				fullPage={false}
-				darkMode={true}
-			/>
+			<React.Fragment>
+				<Helmet>
+					<title>{`${article().title} | ${INFO.main.title}`}</title>
+					<meta name="description" content={article().description} />
+					<meta
+						name="keywords"
+						content={article().keywords.join(", ")}
+					/>
+				</Helmet>
+
+				<div className="page-content">
+					<NavBar />
+
+					<div className="content-wrapper">
+						<div className="read-article-logo-container">
+							<div className="read-article-logo">
+								<Logo width={46} />
+							</div>
+						</div>
+
+						<div className="read-article-container">
+							<div className="read-article-back">
+								<img
+									src="../back-button.png"
+									alt="back"
+									className="read-article-back-button"
+									onClick={() => navigate(-1)}
+								/>
+							</div>
+
+							<div className="read-article-wrapper">
+								<div className="read-article-date-container">
+									<div className="read-article-date">
+										{article().date}
+									</div>
+								</div>
+
+								<div className="title read-article-title">
+									{article().title}
+								</div>
+
+								<div className="read-article-body">
+									<NotionRenderer
+										recordMap={recordMap}
+										fullPage={true}
+										darkMode={true}
+									/>
+								</div>
+							</div>
+						</div>
+						<div className="page-footer">
+							<Footer />
+						</div>
+					</div>
+				</div>
+			</React.Fragment>
 		);
 	} else {
 		return (
