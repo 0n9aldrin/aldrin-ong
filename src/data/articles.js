@@ -256,7 +256,7 @@ function article_3() {
 		keywords: ["React Native", "iOS", "Mobile", "TypeScript", "Supabase"],
 		url: process.env.PUBLIC_URL + "/article/3",
 		notionPageId: 'fa6b2075a481465caf8262a912ac144d',
-		image: process.env.PUBLIC_URL + '/notion-cover.png',
+		image: 'https://aldrin-ong.vercel.app/notion-cover.png',
 		body: (
 			<React.Fragment>
 				<h1>

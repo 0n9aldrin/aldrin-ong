@@ -59,18 +59,21 @@ const ReadArticle = () => {
 					/>
 					{/* Open Graph tags */}
 					<meta
+						name="title"
 						property="og:title"
 						content={`${article().title} | ${INFO.main.title}`}
 					/>
 					<meta
+						name="description"
 						property="og:description"
 						content={article().description}
 					/>
 					<meta
+						name="image"
 						property="og:image"
 						content={article().image || "default-image-url"}
 					/>
-					<meta property="og:type" content="article" />
+					<meta name="type" property="og:type" content="article" />
 				</Helmet>
 				<div className="read-article-page-content">
 					<div className="read-article-header">
@@ -81,8 +84,10 @@ const ReadArticle = () => {
 							</div>
 						</div>
 					</div>
-					<div className="title read-article-notion-title">
-						{article().title}
+					<div className="content-wrapper">
+						<div className="title read-article-title">
+							{article().title}
+						</div>
 					</div>
 					<div className="notion-wrapper">
 						<NotionRenderer
