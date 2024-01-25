@@ -82,6 +82,11 @@
 	padding-bottom: 50px;
 	width: 100% !important;
 }
+.read-article-notion-title {
+	width: 80% !important;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
 
 .read-article-body {
 	padding-bottom: 50px;

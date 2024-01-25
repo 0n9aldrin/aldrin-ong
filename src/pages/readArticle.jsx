@@ -80,9 +80,9 @@ const ReadArticle = () => {
 								<Logo width={46} />
 							</div>
 						</div>
-						<div className="title read-article-title">
-							{article().title}
-						</div>
+					</div>
+					<div className="title read-article-notion-title">
+						{article().title}
 					</div>
 					<div className="notion-wrapper">
 						<NotionRenderer
