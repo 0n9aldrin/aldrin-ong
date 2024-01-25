@@ -21,8 +21,8 @@
 }
 
 .notion-wrapper {
-	position: relative !important; /* Removes sticky positioning */
-    top: 100px !important;
+	margin-top: 50px;
+	padding-top: 100px;
 }
 
 .read-article-logo {
