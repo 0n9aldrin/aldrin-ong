@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { NotionRenderer } from "react-notion-x";
-import { NotionAPI } from 'notion-client'
 
 import { Helmet } from "react-helmet";
 import styled from "styled-components";
@@ -17,8 +16,6 @@ import "./styles/readArticle.css";
 
 let ArticleStyle = styled.div``;
 
-const notion = new NotionAPI();
-
 const ReadArticle = () => {
 	const navigate = useNavigate();
 	let { slug } = useParams();
@@ -30,11 +27,21 @@ const ReadArticle = () => {
 	const isNotionPage = article().notionPageId !== undefined;
 
 	useEffect(() => {
-		window.scrollTo(0, 0);
-		if (isNotionPage) {
-			notion.getPage(article().notionPageId).then(setRecordMap);
-		}
-	}, [article, isNotionPage]);
+        window.scrollTo(0, 0);
+        if (isNotionPage) {
+            fetch(`/api/notion?pageId=${article().notionPageId}`)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => setRecordMap(data))
+                .catch(error => {
+                    console.error('Error fetching Notion data:', error);
+                });
+        }
+    }, [article, isNotionPage]);
 
 	ArticleStyle = styled.div`
 		${article().style}

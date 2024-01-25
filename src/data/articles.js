@@ -227,10 +227,23 @@ function article_1() {
 		),
 	};
 }
-
 function article_2() {
 	return {
+		date: "17 June 2023",
+		title: "How To Use ChatGPT To Source Leads for Your Consulting Club: A Guide from a Berkeley CS Student",
+		description:
+			"AI is transforming all industries, from improving patient outcomes to streamlining operations. Discover how ChatGPT can be used in ways that are not so obvious.",
+		style: ``,
+		keywords: ["ChatGPT", "AI", "Consulting", "JavaScript", "Berkeley"],
+		url: "https://medium.com/@0n9aldrin/how-to-use-chatgpt-to-source-leads-for-your-consulting-club-a-guide-from-a-berkeley-cs-student-780712ad6e52",
 		notionPageId: 'fa6b2075a481465caf8262a912ac144d',
+		body: (
+			<React.Fragment>
+				<h1>
+					"Hello"
+				</h1>
+			</React.Fragment>
+		),
 	};
 }
 
