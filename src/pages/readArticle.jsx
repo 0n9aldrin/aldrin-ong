@@ -51,6 +51,12 @@ const ReadArticle = () => {
 		return (
 			<React.Fragment>
 				<div className="read-article-page-content">
+					<NavBar />
+					<div className="read-article-logo-container">
+						<div className="read-article-logo">
+							<Logo width={46} />
+						</div>
+					</div>
 					<NotionRenderer
 						recordMap={recordMap}
 						fullPage={true}
