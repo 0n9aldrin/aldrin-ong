@@ -10,6 +10,7 @@
 	height: 50px;
 	margin: 0 auto;
 	position: sticky;
+	top: 0;
 }
 
 .read-article-logo-container {
