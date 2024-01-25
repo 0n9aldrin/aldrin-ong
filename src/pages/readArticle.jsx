@@ -50,37 +50,11 @@ const ReadArticle = () => {
 	if (isNotionPage && recordMap) {
 		return (
 			<React.Fragment>
-				<Helmet>
-					<title>{`${article().title} | ${INFO.main.title}`}</title>
-					<meta name="description" content={article().description} />
-					<meta
-						name="keywords"
-						content={article().keywords.join(", ")}
-					/>
-				</Helmet>
-
-				<div className="page-content">
-					<NavBar />
-
-					<div className="read-article-content-wrapper">
-						<div className="read-article-logo-container">
-							<div className="read-article-logo">
-								<Logo width={46} />
-							</div>
-						</div>
-
-						<div className="read-article-container">
-							<NotionRenderer
-								recordMap={recordMap}
-								fullPage={true}
-								darkMode={true}
-							/>
-						</div>
-						<div className="page-footer">
-							<Footer />
-						</div>
-					</div>
-				</div>
+				<NotionRenderer
+					recordMap={recordMap}
+					fullPage={true}
+					darkMode={true}
+				/>
 			</React.Fragment>
 		);
 	} else {
