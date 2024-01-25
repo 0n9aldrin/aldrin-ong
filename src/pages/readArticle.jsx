@@ -59,6 +59,9 @@ const ReadArticle = () => {
 							</div>
 						</div>
 					</div>
+					<div className="title read-article-title">
+						{article().title}
+					</div>
 					<div className="notion-wrapper">
 						<NotionRenderer
 							recordMap={recordMap}
