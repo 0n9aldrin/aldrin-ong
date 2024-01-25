@@ -11,6 +11,10 @@
 	padding-top: 25px;
 }
 
+.notion-wrapper {
+	margin-top: 50px;
+}
+
 .read-article-logo {
 	display: flex;
 	position: fixed;
