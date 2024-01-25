@@ -50,6 +50,28 @@ const ReadArticle = () => {
 	if (isNotionPage && recordMap) {
 		return (
 			<React.Fragment>
+				<Helmet>
+					<title>{`${article().title} | ${INFO.main.title}`}</title>
+					<meta name="description" content={article().description} />
+					<meta
+						name="keywords"
+						content={article().keywords.join(", ")}
+					/>
+					{/* Open Graph tags */}
+					<meta
+						property="og:title"
+						content={`${article().title} | ${INFO.main.title}`}
+					/>
+					<meta
+						property="og:description"
+						content={article().description}
+					/>
+					<meta
+						property="og:image"
+						content={article().image || "default-image-url"}
+					/>
+					<meta property="og:type" content="article" />
+				</Helmet>
 				<div className="read-article-page-content">
 					<div className="read-article-header">
 						<NavBar />
@@ -58,9 +80,9 @@ const ReadArticle = () => {
 								<Logo width={46} />
 							</div>
 						</div>
-					</div>
-					<div className="title read-article-title">
-						{article().title}
+						<div className="title read-article-title">
+							{article().title}
+						</div>
 					</div>
 					<div className="notion-wrapper">
 						<NotionRenderer
