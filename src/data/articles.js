@@ -239,7 +239,12 @@ function article_2() {
 		url: "https://medium.com/@0n9aldrin/how-to-use-chatgpt-to-source-leads-for-your-consulting-club-a-guide-from-a-berkeley-cs-student-780712ad6e52",
 		body: (
 			<React.Fragment>
-				<h1>Content of article 2</h1>
+				<h1>
+					<iframe
+						src="https://v2-embednotion.com/Transforming-Mobile-Safety-A-Software-Engineering-Journey-with-Lookout-Safety-fa6b2075a481465caf8262a912ac144d?pvs=4"
+						title="Mobile Safety Software Engineering Journey"
+					></iframe>
+				</h1>
 			</React.Fragment>
 		),
 	};
