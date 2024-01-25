@@ -80,23 +80,11 @@ const ReadArticle = () => {
 							</div>
 
 							<div className="read-article-wrapper">
-								<div className="read-article-date-container">
-									<div className="read-article-date">
-										{article().date}
-									</div>
-								</div>
-
-								<div className="title read-article-title">
-									{article().title}
-								</div>
-
-								<div className="read-article-body">
-									<NotionRenderer
-										recordMap={recordMap}
-										fullPage={true}
-										darkMode={true}
-									/>
-								</div>
+								<NotionRenderer
+									recordMap={recordMap}
+									fullPage={true}
+									darkMode={true}
+								/>
 							</div>
 						</div>
 						<div className="page-footer">
