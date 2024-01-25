@@ -1,5 +1,8 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
+import { NotionRenderer } from "react-notion-x";
+import { NotionAPI } from 'notion-client'
+
 import { Helmet } from "react-helmet";
 import styled from "styled-components";
 
@@ -14,71 +17,95 @@ import "./styles/readArticle.css";
 
 let ArticleStyle = styled.div``;
 
+const notion = new NotionAPI();
+
 const ReadArticle = () => {
 	const navigate = useNavigate();
 	let { slug } = useParams();
+	const [recordMap, setRecordMap] = useState(null);
 
 	const article = myArticles[slug - 1];
 
+	// Check if the article is a Notion page
+	const isNotionPage = article().notionPageId !== undefined;
+
 	useEffect(() => {
 		window.scrollTo(0, 0);
-	}, [article]);
+		if (isNotionPage) {
+			notion.getPage(article().notionPageId).then(setRecordMap);
+		}
+	}, [article, isNotionPage]);
 
 	ArticleStyle = styled.div`
 		${article().style}
 	`;
 
-	return (
-		<React.Fragment>
-			<Helmet>
-				<title>{`${article().title} | ${INFO.main.title}`}</title>
-				<meta name="description" content={article().description} />
-				<meta name="keywords" content={article().keywords.join(", ")} />
-			</Helmet>
+	if (isNotionPage && recordMap) {
+		return (
+			<NotionRenderer
+				recordMap={recordMap}
+				fullPage={true}
+				darkMode={true}
+			/>
+		);
+	} else {
+		return (
+			<React.Fragment>
+				<Helmet>
+					<title>{`${article().title} | ${INFO.main.title}`}</title>
+					<meta name="description" content={article().description} />
+					<meta
+						name="keywords"
+						content={article().keywords.join(", ")}
+					/>
+				</Helmet>
 
-			<div className="page-content">
-				<NavBar />
+				<div className="page-content">
+					<NavBar />
 
-				<div className="content-wrapper">
-					<div className="read-article-logo-container">
-						<div className="read-article-logo">
-							<Logo width={46} />
+					<div className="content-wrapper">
+						<div className="read-article-logo-container">
+							<div className="read-article-logo">
+								<Logo width={46} />
+							</div>
 						</div>
-					</div>
 
-					<div className="read-article-container">
-						<div className="read-article-back">
-							<img
-								src="../back-button.png"
-								alt="back"
-								className="read-article-back-button"
-								onClick={() => navigate(-1)}
-							/>
-						</div>
+						<div className="read-article-container">
+							<div className="read-article-back">
+								<img
+									src="../back-button.png"
+									alt="back"
+									className="read-article-back-button"
+									onClick={() => navigate(-1)}
+								/>
+							</div>
 
-						<div className="read-article-wrapper">
-							<div className="read-article-date-container">
-								<div className="read-article-date">
-									{article().date}
+							<div className="read-article-wrapper">
+								<div className="read-article-date-container">
+									<div className="read-article-date">
+										{article().date}
+									</div>
+								</div>
+
+								<div className="title read-article-title">
+									{article().title}
+								</div>
+
+								<div className="read-article-body">
+									<ArticleStyle>
+										{article().body}
+									</ArticleStyle>
 								</div>
 							</div>
-
-							<div className="title read-article-title">
-								{article().title}
-							</div>
-
-							<div className="read-article-body">
-								<ArticleStyle>{article().body}</ArticleStyle>
-							</div>
+						</div>
+						<div className="page-footer">
+							<Footer />
 						</div>
 					</div>
-					<div className="page-footer">
-						<Footer />
-					</div>
 				</div>
-			</div>
-		</React.Fragment>
-	);
+			</React.Fragment>
+		);
+	}
 };
 
 export default ReadArticle;

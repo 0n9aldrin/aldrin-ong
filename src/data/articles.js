@@ -230,30 +230,7 @@ function article_1() {
 
 function article_2() {
 	return {
-		date: "17 June 2023",
-		title: "How To Use ChatGPT To Source Leads for Your Consulting Club: A Guide from a Berkeley CS Student",
-		description:
-			"AI is transforming all industries, from improving patient outcomes to streamlining operations. Discover how ChatGPT can be used in ways that are not so obvious.",
-		style: ``,
-		keywords: ["ChatGPT", "AI", "Consulting", "JavaScript", "Berkeley"],
-		url: "https://medium.com/@0n9aldrin/how-to-use-chatgpt-to-source-leads-for-your-consulting-club-a-guide-from-a-berkeley-cs-student-780712ad6e52",
-		body: (
-			<React.Fragment>
-				<h1>
-					<iframe
-						src="https://v2-embednotion.com/Transforming-Mobile-Safety-A-Software-Engineering-Journey-with-Lookout-Safety-fa6b2075a481465caf8262a912ac144d?pvs=4"
-						title="Mobile Safety Software Engineering Journey"
-						style={{
-							width: '100%',
-							height: '500px',
-							border: '2px solid #ccc',
-							borderRadius: '10px',
-							//padding: 'none'  Note: 'none' is not a valid value for padding. Use '0' if you want no padding.
-						  }}
-					></iframe>
-				</h1>
-			</React.Fragment>
-		),
+		notionPageId: 'fa6b2075a481465caf8262a912ac144d',
 	};
 }
 
