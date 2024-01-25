@@ -1,5 +1,10 @@
 @import "../../data/styles.css";
 
+.read-article-page-content {
+	background-color: var(--background-color);
+	position: relative;
+}
+
 .read-article-logo-container {
 	display: flex;
 	justify-content: left;

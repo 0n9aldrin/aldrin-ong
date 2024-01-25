@@ -50,11 +50,13 @@ const ReadArticle = () => {
 	if (isNotionPage && recordMap) {
 		return (
 			<React.Fragment>
-				<NotionRenderer
-					recordMap={recordMap}
-					fullPage={true}
-					darkMode={true}
-				/>
+				<div className="read-article-page-content">
+					<NotionRenderer
+						recordMap={recordMap}
+						fullPage={true}
+						darkMode={true}
+					/>
+				</div>
 			</React.Fragment>
 		);
 	} else {
