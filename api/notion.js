@@ -1,20 +1,23 @@
-// /api/notion.js
-const { NotionAPI } = require('notion-client');
-
 module.exports = async (req, res) => {
-    const notion = new NotionAPI();
-    const pageId = req.query.pageId; // or your fixed page ID
-
-    if (!pageId) {
-        return res.status(400).json({ message: 'Page ID is required' });
-    }
+    let NotionAPI;
 
     try {
-        console.log('Fetching page:', pageId);
+        // Dynamically import the NotionAPI
+        const notionModule = await import('notion-client');
+        NotionAPI = notionModule.NotionAPI;
+    } catch (error) {
+        console.error('Error importing notion-client:', error);
+        return res.status(500).json({ message: 'Failed to import notion-client' });
+    }
+
+    const notion = new NotionAPI();
+    const pageId = req.query.pageId; // or your default page ID
+
+    try {
         const recordMap = await notion.getPage(pageId);
         res.status(200).json(recordMap);
     } catch (error) {
-        console.error('Error fetching from Notion:', error);
-        res.status(500).json({ message: error.message });
+        console.error(error);
+        res.status(500).json({ message: "Internal Server Error" });
     }
 };
