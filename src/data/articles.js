@@ -236,7 +236,6 @@ function article_2() {
 		style: ``,
 		keywords: ["ChatGPT", "AI", "Consulting", "JavaScript", "Berkeley"],
 		url: "https://medium.com/@0n9aldrin/how-to-use-chatgpt-to-source-leads-for-your-consulting-club-a-guide-from-a-berkeley-cs-student-780712ad6e52",
-		notionPageId: 'fa6b2075a481465caf8262a912ac144d',
 		body: (
 			<React.Fragment>
 				<h1>
@@ -247,6 +246,26 @@ function article_2() {
 	};
 }
 
-const myArticles = [article_1, article_2];
+function article_3() {
+	return {
+		date: "25 January 2024",
+		title: "Transforming Mobile Safety: A Software Engineering Journey with Lookout Safety",
+		description:
+			"Embarking on an ambitious journey to enhance mobile safety, our team at Mobile Developers of Berkeley collaborated with Lookout Safety, a startup dedicated to innovative safety solutions.",
+		style: ``,
+		keywords: ["React Native", "iOS", "Mobile", "TypeScript", "Supabase"],
+		url: process.env.PUBLIC_URL + "/article/3",
+		notionPageId: 'fa6b2075a481465caf8262a912ac144d',
+		body: (
+			<React.Fragment>
+				<h1>
+					"Notion Article"
+				</h1>
+			</React.Fragment>
+		),
+	};
+}
+
+const myArticles = [article_1, article_2, article_3];
 
 export default myArticles;
