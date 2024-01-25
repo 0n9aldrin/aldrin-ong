@@ -51,7 +51,7 @@ const ReadArticle = () => {
 		return (
 			<NotionRenderer
 				recordMap={recordMap}
-				fullPage={true}
+				fullPage={false}
 				darkMode={true}
 			/>
 		);
