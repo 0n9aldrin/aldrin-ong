@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { NotionRenderer } from "react-notion-x";
+import { Code } from 'react-notion-x/build/third-party/code'
+import { Collection } from 'react-notion-x/build/third-party/collection'
 
 import { Helmet } from "react-helmet";
 import styled from "styled-components";
@@ -94,6 +96,10 @@ const ReadArticle = () => {
 							recordMap={recordMap}
 							fullPage={false}
 							darkMode={true}
+							components={{
+								Code,
+								Collection,
+							  }}
 						/>
 					</div>
 					<div className="content-wrapper">
