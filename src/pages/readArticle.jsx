@@ -71,7 +71,7 @@ const ReadArticle = () => {
 					<meta
 						name="image"
 						property="og:image"
-						content={process.env.PUBLIC_URL + article().image || process.env.PUBLIC_URL + "cover.png"}
+						content={article().image || process.env.PUBLIC_URL + "cover.png"}
 					/>
 					<meta name="type" property="og:type" content="article" />
 				</Helmet>
@@ -128,7 +128,7 @@ const ReadArticle = () => {
 					<meta
 						name="image"
 						property="og:image"
-						content={process.env.PUBLIC_URL + article().image || process.env.PUBLIC_URL + "cover.png"}
+						content={article().image || process.env.PUBLIC_URL + "cover.png"}
 					/>
 					<meta name="type" property="og:type" content="article" />
 				</Helmet>
