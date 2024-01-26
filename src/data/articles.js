@@ -236,6 +236,7 @@ function article_2() {
 		style: ``,
 		keywords: ["ChatGPT", "AI", "Consulting", "JavaScript", "Berkeley"],
 		url: "https://medium.com/@0n9aldrin/how-to-use-chatgpt-to-source-leads-for-your-consulting-club-a-guide-from-a-berkeley-cs-student-780712ad6e52",
+		image: "/homepage1.png",
 		body: (
 			<React.Fragment>
 				<h1>
@@ -256,7 +257,7 @@ function article_3() {
 		keywords: ["React Native", "iOS", "Mobile", "TypeScript", "Supabase"],
 		url: process.env.PUBLIC_URL + "/article/3",
 		notionPageId: 'fa6b2075a481465caf8262a912ac144d',
-		image: 'notion-cover.png',
+		image: '/notion-cover.png',
 		body: (
 			<React.Fragment>
 				<h1>
