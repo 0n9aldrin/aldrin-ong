@@ -261,7 +261,7 @@ function article_3() {
 		body: (
 			<React.Fragment>
 				<h1>
-					"Notion Article"
+					Loading...
 				</h1>
 			</React.Fragment>
 		),
