@@ -2,14 +2,14 @@ const SEO = [
 	{
 		page: "home",
 		description:
-			"I am a backend developer with expertise in Node.js. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies.",
+			"Welcome to Aldrin Ong's portfolio showcasing his projects, work experience, and articles. Explore his journey in software development and technology.",
 		keywords: ["Aldrin", "Aldrin O", "Aldrin Ong"],
 	},
 
 	{
 		page: "about",
 		description:
-			"I am a backend developer with expertise in Node.js. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies.",
+			"Welcome to Aldrin Ong's portfolio showcasing his projects, work experience, and articles. Explore his journey in software development and technology.",
 			keywords: ["Aldrin", "Aldrin O", "Aldrin Ong"],
 	},
 
