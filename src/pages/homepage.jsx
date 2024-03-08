@@ -104,9 +104,9 @@ const Homepage = () => {
 					</div>
 
 					<div className="homepage-container">
-						<div className="title homepage-title">
+						<h1 className="title homepage-title">
 							<TypedComponent strings={INFO.homepage.titles} />
-						</div>
+						</h1>
 						<div className="homepage-first-area">
 							<div className="homepage-first-area-left-side">
 								<div className="subtitle homepage-subtitle">
