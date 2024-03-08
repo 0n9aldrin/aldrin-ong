@@ -327,7 +327,7 @@ const INFO = {
 		{
 			title: "Lookout Safety",
 			description:
-				"A React Native application designed to enhance the interaction between course staff and students during large live lectures.",
+				"A paid client project: React Native application aimed to help organizations create safer environments where everyone contributes to preventing harm.",
 			logo: `${process.env.PUBLIC_URL}/projects/lookout.png`,
 			linkText: "View Project",
 			link: "https://apps.apple.com/ca/app/lookout-safety/id6469295337?platform=iphone",
