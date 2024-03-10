@@ -91,6 +91,7 @@ const Homepage = () => {
 					name="keywords"
 					content={currentSEO.keywords.join(", ")}
 				/>
+				<meta name="google-site-verification" content="iMGE4TditBRc1WGR7iK0h7ddQLUaXI9hHGLjcWwrn7c" />
 			</Helmet>
 
 			<div className="page-content">
