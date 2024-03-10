@@ -18,6 +18,7 @@ const Projects = () => {
 	}, []);
 
 	const currentSEO = SEO.find((item) => item.page === "projects");
+	const projectsLength = INFO.projects.length;
 
 	return (
 		<React.Fragment>
@@ -59,7 +60,7 @@ const Projects = () => {
 						</div>
 
 						<div className="projects-list">
-							<AllProjects />
+							<AllProjects numberOfProjects={projectsLength}/>
 						</div>
 					</div>
 					<div className="page-footer">

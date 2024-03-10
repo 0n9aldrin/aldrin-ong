@@ -186,7 +186,7 @@ const Homepage = () => {
 						<MouseIcon showMouseIcon={showMouseIcon} />
 						<h2 className="projects-title">Projects</h2>
 						<div className="homepage-projects">
-							<AllProjects />
+							<AllProjects numberOfProjects={6} />
 						</div>
 						<div className="more-projects">
 							<a

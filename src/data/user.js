@@ -325,6 +325,15 @@ const INFO = {
 
 	projects: [
 		{
+			title: "Little Gems",
+			description:
+				"A mobile app that connects tourists with locals to discover authentic and off-the-beaten-path restaurants, enhancing culinary tourism experiences.",
+			logo: `${process.env.PUBLIC_URL}/projects/gem.png`,
+			linkText: "View Project",
+			link: "https://devpost.com/software/little-gems",
+		},
+
+		{
 			title: "Lookout Safety",
 			description:
 				"A paid client project: React Native application aimed to help organizations create safer environments where everyone contributes to preventing harm.",
