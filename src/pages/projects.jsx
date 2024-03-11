@@ -6,11 +6,15 @@ import Footer from "../components/common/footer";
 import Logo from "../components/common/logo";
 import AllProjects from "../components/projects/allProjects";
 
+// import logo from "../components/projects/programming-not-css.svg";
+// import styles from "../components/projects/programming-styles.css";
+
 import INFO from "../data/user";
 import SEO from "../data/seo";
 
 import "./styles/projects.css";
 import Resume from "../components/common/resume";
+import Programmer from "../components/projects/Programmer";
 
 const Projects = () => {
 	useEffect(() => {
@@ -41,26 +45,32 @@ const Projects = () => {
 						</div>
 					</div>
 					<div className="projects-container">
-						<div className="title projects-title">
-							Things I’ve made trying to put my dent in the
-							universe.
-						</div>
+						<div className="projects-main">
+							<div className="projects-left-side">
+								<Programmer />
+							</div>
 
-						<div className="subtitle projects-subtitle">
-							I've worked on a variety of projects over the years
-							and I'm proud of the progress I've made. Many of
-							these projects are open-source and available for
-							others to explore and contribute to. If you're
-							interested in any of the projects I've worked on,
-							please feel free to check out the code and suggest
-							any improvements or enhancements you might have in
-							mind. Collaborating with others is a great way to
-							learn and grow, and I'm always open to new ideas and
-							feedback.
+							<div className="projects-right-side">
+								<div className="projects-page-title">
+									Creative Ventures: My Projects Portfolio
+								</div>
+
+								<div className="projects-page-subtitle">
+									Explore my diverse collection of projects,
+									each crafted with care and precision to
+									address unique challenges and deliver
+									innovative solutions. From apps enhancing
+									culinary tourism experiences to apps
+									improving safety in various environments, my
+									portfolio reflects a commitment to
+									excellence and creativity. Feel free to
+									browse through the projects below.
+								</div>
+							</div>
 						</div>
 
 						<div className="projects-list">
-							<AllProjects numberOfProjects={projectsLength}/>
+							<AllProjects numberOfProjects={projectsLength} />
 						</div>
 					</div>
 					<div className="page-footer">

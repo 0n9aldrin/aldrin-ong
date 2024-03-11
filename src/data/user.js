@@ -378,14 +378,14 @@ const INFO = {
 			link: "research.pdf",
 		},
 
-		// {
-		// 	title: "Two Wish",
-		// 	description:
-		// 		"A customer side Flutter app of the TwoWish.jkt company that allows users to donate and contact various organisations that need donations. ",
-		// 	logo: `${process.env.PUBLIC_URL}/projects/flutter.png`,
-		// 	linkText: "View Project",
-		// 	link: "https://github.com/0n9aldrin/2wish",
-		// },
+		{
+			title: "Two Wish",
+			description:
+				"A customer side Flutter app of the TwoWish.jkt company that allows users to donate and contact various organisations that need donations. ",
+			logo: `${process.env.PUBLIC_URL}/projects/flutter.png`,
+			linkText: "View Project",
+			link: "https://github.com/0n9aldrin/2wish",
+		},
 
 		{
 			title: "Trainme",
