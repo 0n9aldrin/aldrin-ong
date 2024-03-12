@@ -210,9 +210,9 @@ const Homepage = () => {
 								Explore My Journey
 							</a>
 						</div>
-						<h2 className="blogs-title">Blogs</h2>
+						<h2 className="blogs-title">Featured Blogs</h2>
 						<div className="homepage-articles">
-							{myArticles.map((article, index) => (
+							{myArticles.slice(0, 3).map((article, index) => (
 								<div
 									className="homepage-article-wrapper"
 									key={(index + 1).toString()}
@@ -226,6 +226,14 @@ const Homepage = () => {
 									/>
 								</div>
 							))}
+						</div>
+						<div className="more-work">
+							<a
+								href={process.env.PUBLIC_URL + "/articles"}
+								className="more-button"
+							>
+								View all blogs
+							</a>
 						</div>
 
 						<div className="page-footer">

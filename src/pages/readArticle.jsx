@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { NotionRenderer } from "react-notion-x";
-import { Code } from 'react-notion-x/build/third-party/code'
-import { Collection } from 'react-notion-x/build/third-party/collection'
+import { Code } from "react-notion-x/build/third-party/code";
+import { Collection } from "react-notion-x/build/third-party/collection";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCircleChevronLeft } from '@fortawesome/free-solid-svg-icons';
 
 import { Helmet } from "react-helmet";
 import styled from "styled-components";
@@ -73,7 +75,10 @@ const ReadArticle = () => {
 					<meta
 						name="image"
 						property="og:image"
-						content={article().image || process.env.PUBLIC_URL + "cover.png"}
+						content={
+							article().image ||
+							process.env.PUBLIC_URL + "cover.png"
+						}
 					/>
 					<meta name="type" property="og:type" content="article" />
 				</Helmet>
@@ -99,7 +104,7 @@ const ReadArticle = () => {
 							components={{
 								Code,
 								Collection,
-							  }}
+							}}
 						/>
 					</div>
 					<div className="content-wrapper">
@@ -134,7 +139,10 @@ const ReadArticle = () => {
 					<meta
 						name="image"
 						property="og:image"
-						content={article().image || process.env.PUBLIC_URL + "cover.png"}
+						content={
+							article().image ||
+							process.env.PUBLIC_URL + "cover.png"
+						}
 					/>
 					<meta name="type" property="og:type" content="article" />
 				</Helmet>
@@ -151,10 +159,10 @@ const ReadArticle = () => {
 
 						<div className="read-article-container">
 							<div className="read-article-back">
-								<img
-									src="../back-button.png"
-									alt="back"
+								<FontAwesomeIcon
+									icon={faCircleChevronLeft}
 									className="read-article-back-button"
+									style={{ color: 'white', fontSize: '50px' }}
 									onClick={() => navigate(-1)}
 								/>
 							</div>

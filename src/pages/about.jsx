@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 
 import NavBar from "../components/common/navBar";
@@ -12,13 +12,36 @@ import SEO from "../data/seo";
 import "./styles/about.css";
 import Resume from "../components/common/resume";
 import Movies from "../components/about/movies";
+import MouseIcon from "../components/homepage/mouseIcon";
 
 const About = () => {
+	const [showMouseIcon, setShowMouseIcon] = useState(true);
+	const currentSEO = SEO.find((item) => item.page === "about");
+
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
 
-	const currentSEO = SEO.find((item) => item.page === "about");
+	useEffect(() => {
+		// eslint-disable-next-line no-unused-vars
+		let lastScrollY = window.pageYOffset;
+
+		const handleScroll = () => {
+			const currentScrollY = Math.round(window.pageYOffset, 2);
+
+			// Logic for showing or hiding the mouse icon
+			setShowMouseIcon(currentScrollY < 100);
+
+			lastScrollY = currentScrollY;
+		};
+
+		window.addEventListener("scroll", handleScroll);
+
+		// Cleanup listener when component unmounts
+		return () => window.removeEventListener("scroll", handleScroll);
+	}, []);
+
+	
 
 	return (
 		<React.Fragment>
@@ -49,8 +72,36 @@ const About = () => {
 								</div>
 
 								<div className="subtitle about-subtitle">
-									{INFO.about.description}
+									From a young age, I've been driven by the
+									desire to innovate and make a meaningful
+									impact through technology.
+									<br />
+									<br />
+									My entrepreneurial journey started in high
+									school when I founded a startup called{" "}
+									<a
+										className="link"
+										href="https://github.com/0n9aldrin/trainme-frontend"
+									>
+										Trainme
+									</a>
+									, an app connecting tennis coaches to
+									students. While the venture didn't reach the
+									heights I envisioned, the experience taught
+									me invaluable lessons about perseverance and
+									the power of technology to touch lives, even
+									on a small scale.
+									<br />
+									<br />
+									That little taste of entrepreneurship
+									sparked a fire in me, and I've been on a
+									mission to build, create, and innovate ever
+									since. My dream is to build products that
+									make a difference in people's lives, and I'm
+									excited to see where my journey takes me
+									next.
 								</div>
+								<MouseIcon showMouseIcon={showMouseIcon}/>
 							</div>
 
 							<div className="about-left-side">

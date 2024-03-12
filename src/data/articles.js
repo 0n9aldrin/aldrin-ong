@@ -1,4 +1,5 @@
 import React from "react";
+import Loading from "../components/common/loading";
 
 function article_1() {
 	return {
@@ -239,9 +240,25 @@ function article_2() {
 		image: "/homepage1.png",
 		body: (
 			<React.Fragment>
-				<h1>
-					"Hello"
-				</h1>
+				<h1>"Hello"</h1>
+			</React.Fragment>
+		),
+	};
+}
+
+function article_4() {
+	return {
+		date: "11 March 2024",
+		title: "Adding SVG animations to your React website",
+		description:
+			"Discover how to effortlessly integrate SVG animations into React apps with tools like LottieFiles, Storyset, and svg2jsx. Enhance your web design today.",
+		style: ``,
+		keywords: ["React", "SVG", "Animations", "Typescript", "Website"],
+		url: "https://medium.com/@0n9aldrin/adding-svg-animations-to-your-react-website-1056a82988bc",
+		image: "/homepage1.png",
+		body: (
+			<React.Fragment>
+				<h1>"Hello"</h1>
 			</React.Fragment>
 		),
 	};
@@ -255,19 +272,19 @@ function article_3() {
 			"Embarking on an ambitious journey to enhance mobile safety, our team at Mobile Developers of Berkeley collaborated with Lookout Safety, a startup dedicated to innovative safety solutions.",
 		style: ``,
 		keywords: ["React Native", "iOS", "Mobile", "TypeScript", "Supabase"],
-		url: process.env.PUBLIC_URL + "/article/3",
-		notionPageId: 'fa6b2075a481465caf8262a912ac144d',
-		image: 'https://aldrin-ong.vercel.app/notion-cover.png',
+		url: process.env.PUBLIC_URL + "/article/1",
+		notionPageId: "fa6b2075a481465caf8262a912ac144d",
+		image: "https://aldrin-ong.vercel.app/notion-cover.png",
 		body: (
 			<React.Fragment>
-				<h1>
-					Loading...
-				</h1>
+				<div style={{ width: "40%", margin: 'auto' }}>
+					<Loading />
+				</div>
 			</React.Fragment>
 		),
 	};
 }
 
-const myArticles = [article_1, article_2, article_3];
+const myArticles = [article_3, article_4, article_2, article_1];
 
 export default myArticles;

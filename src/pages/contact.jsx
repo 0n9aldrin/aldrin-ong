@@ -50,7 +50,7 @@ const Contact = () => {
 							me. I welcome your feedback, questions, and
 							suggestions. If you have a specific question or
 							comment, please feel free to email me directly at
-							&nbsp;{" "}
+							{" "}
 							<a
 								className="link"
 								href={`mailto:${INFO.main.email}`}
@@ -63,7 +63,7 @@ const Contact = () => {
 							social media, you can find me on{" "}
 							<a
 								className="link"
-								href={INFO.socials.instagram}
+								href={INFO.socials.instagramLink}
 								target="_blank"
 								rel="noreferrer"
 							>

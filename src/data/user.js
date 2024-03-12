@@ -20,6 +20,7 @@ const INFO = {
 		github: "https://github.com/0n9aldrin",
 		linkedin: "https://linkedin.com/aldrin0n9",
 		instagram: "https://instagram.com/aldrin0n9",
+		instagramLink: "https://www.instagram.com/aldrin0n9?igsh=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr",
 		stackoverflow: "https://stackoverflow.com/",
 		facebook: "https://facebook.com/",
 		medium: "https://medium.com/@0n9aldrin",
@@ -38,15 +39,15 @@ const INFO = {
 	},
 
 	about: {
-		title: "I’m Aldrin. I live in Berkeley, where I design the future.",
+		title: "I’m Aldrin. Welcome to my corner of the web! 🚀",
 		description:
-			"I've worked on a variety of projects over the years and I'm proud of the progress I've made. Many of these projects are open-source and available for others to explore and contribute to. If you're interested in any of the projects I've worked on, please feel free to check out the code and suggest any improvements or enhancements you might have in mind. Collaborating with others is a great way to learn and grow, and I'm always open to new ideas and feedback.",
+			"From a young age, I've been driven by the desire to innovate and make a meaningful impact through technology. \n\n My entrepreneurial journey started in high school when I founded a startup called <a className='link' href='https://github.com/0n9aldrin/trainme-frontend'>Trainme</a>, an app connecting tennis coaches to students. While the venture didn't reach the heights I envisioned, the experience taught me invaluable lessons about perseverance and the power of technology to touch lives, even on a small scale. \n\n That little taste of entrepreneurship sparked a fire in me, and I've been on a mission to build, create, and innovate ever since. My dream is to build products that make a difference in people's lives, and I'm excited to see where my journey takes me next.",
 	},
 
 	articles: {
 		title: "I often have good ideas but not enough time to write them down.",
 		description:
-			"Chronological collection of my long-form thoughts on college, programming, leadership, product design, and more.",
+			"A collection of my long-form thoughts on college, programming, leadership, product design, and more.",
 	},
 
 	work: {
@@ -323,79 +324,84 @@ const INFO = {
 		},
 	],
 
-	projects: [
-		{
-			title: "Little Gems",
-			description:
-				"A mobile app that connects tourists with locals to discover authentic and off-the-beaten-path restaurants, enhancing culinary tourism experiences.",
-			logo: `${process.env.PUBLIC_URL}/projects/gem.png`,
-			linkText: "View Project",
-			link: "https://devpost.com/software/little-gems",
-		},
+	projects: {
+		title: "Creative Ventures: My Projects Portfolio",
+		description:
+			"Explore my diverse collection of projects, each crafted with care and precision to address unique challenges and deliver innovative solutions. From apps enhancing culinary tourism experiences to apps improving safety in various environments, my portfolio reflects a commitment to excellence and creativity. Feel free to browse through the projects below.",
+		items: [
+			{
+				title: "Little Gems",
+				description:
+					"A mobile app that connects tourists with locals to discover authentic and off-the-beaten-path restaurants, enhancing culinary tourism experiences.",
+				logo: `${process.env.PUBLIC_URL}/projects/gem.png`,
+				linkText: "View Project",
+				link: "https://devpost.com/software/little-gems",
+			},
 
-		{
-			title: "Lookout Safety",
-			description:
-				"A paid client project: React Native application aimed to help organizations create safer environments where everyone contributes to preventing harm.",
-			logo: `${process.env.PUBLIC_URL}/projects/lookout.png`,
-			linkText: "View Project",
-			link: "https://apps.apple.com/ca/app/lookout-safety/id6469295337?platform=iphone",
-		},
+			{
+				title: "Lookout Safety",
+				description:
+					"A paid client project: React Native application aimed to help organizations create safer environments where everyone contributes to preventing harm.",
+				logo: `${process.env.PUBLIC_URL}/projects/lookout.png`,
+				linkText: "View Project",
+				link: "https://apps.apple.com/ca/app/lookout-safety/id6469295337?platform=iphone",
+			},
 
-		{
-			title: "Lecturely",
-			description:
-				"A React Native application designed to enhance the interaction between course staff and students during large live lectures.",
-			logo: `${process.env.PUBLIC_URL}/projects/lecturely.png`,
-			linkText: "View Project",
-			link: "https://github.com/NithikYekollu/lecturely-new",
-		},
+			{
+				title: "Lecturely",
+				description:
+					"A React Native application designed to enhance the interaction between course staff and students during large live lectures.",
+				logo: `${process.env.PUBLIC_URL}/projects/lecturely.png`,
+				linkText: "View Project",
+				link: "https://github.com/NithikYekollu/lecturely-new",
+			},
 
-		{
-			title: "TMDB Declarative UI",
-			description:
-				"An internship project implemented using Jetpack Compose to display popular movies using The Movie Database API.",
-			logo: `${process.env.PUBLIC_URL}/projects/android.svg`,
-			linkText: "View Project",
-			link: "https://github.com/0n9aldrin/tmdb-declarative-ui",
-		},
+			{
+				title: "TMDB Declarative UI",
+				description:
+					"An internship project implemented using Jetpack Compose to display popular movies using The Movie Database API.",
+				logo: `${process.env.PUBLIC_URL}/projects/android.svg`,
+				linkText: "View Project",
+				link: "https://github.com/0n9aldrin/tmdb-declarative-ui",
+			},
 
-		{
-			title: "Price Comparison App",
-			description:
-				"A Flutter app that compares the prices of 5 Indonesian e-commerce websites using web scraping and hidden endpoints.",
-			logo: `${process.env.PUBLIC_URL}/projects/flutter.png`,
-			linkText: "View Project",
-			link: "https://github.com/0n9aldrin/price-comparison",
-		},
+			{
+				title: "Price Comparison App",
+				description:
+					"A Flutter app that compares the prices of 5 Indonesian e-commerce websites using web scraping and hidden endpoints.",
+				logo: `${process.env.PUBLIC_URL}/projects/flutter.png`,
+				linkText: "View Project",
+				link: "https://github.com/0n9aldrin/price-comparison",
+			},
 
-		{
-			title: "Machine Learning Research Paper",
-			description:
-				"To what extent can supervised ML algorithms — ANNs and SVMs — be used to predict football matches in the Premier League?",
-			logo: `${process.env.PUBLIC_URL}/projects/python.png`,
-			linkText: "View Project",
-			link: "research.pdf",
-		},
+			{
+				title: "Machine Learning Research Paper",
+				description:
+					"To what extent can supervised ML algorithms — ANNs and SVMs — be used to predict football matches in the Premier League?",
+				logo: `${process.env.PUBLIC_URL}/projects/python.png`,
+				linkText: "View Project",
+				link: "research.pdf",
+			},
 
-		{
-			title: "Two Wish",
-			description:
-				"A customer side Flutter app of the TwoWish.jkt company that allows users to donate and contact various organisations that need donations. ",
-			logo: `${process.env.PUBLIC_URL}/projects/flutter.png`,
-			linkText: "View Project",
-			link: "https://github.com/0n9aldrin/2wish",
-		},
+			{
+				title: "Two Wish",
+				description:
+					"A customer side Flutter app of the TwoWish.jkt company that allows users to donate and contact various organisations that need donations. ",
+				logo: `${process.env.PUBLIC_URL}/projects/flutter.png`,
+				linkText: "View Project",
+				link: "https://github.com/0n9aldrin/2wish",
+			},
 
-		{
-			title: "Trainme",
-			description:
-				"An android app that connects Indonesian tennis coaches with students and is a one-stop platform for tennis enthusiasts.",
-			logo: `${process.env.PUBLIC_URL}/work/trainme.png`,
-			linkText: "View Project",
-			link: "https://github.com/0n9aldrin/trainme-frontend",
-		},
-	],
+			{
+				title: "Trainme",
+				description:
+					"An android app that connects Indonesian tennis coaches with students and is a one-stop platform for tennis enthusiasts.",
+				logo: `${process.env.PUBLIC_URL}/work/trainme.png`,
+				linkText: "View Project",
+				link: "https://github.com/0n9aldrin/trainme-frontend",
+			},
+		],
+	},
 };
 
 export default INFO;

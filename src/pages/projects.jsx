@@ -22,7 +22,7 @@ const Projects = () => {
 	}, []);
 
 	const currentSEO = SEO.find((item) => item.page === "projects");
-	const projectsLength = INFO.projects.length;
+	const projectsLength = INFO.projects.items.length;
 
 	return (
 		<React.Fragment>
@@ -52,19 +52,11 @@ const Projects = () => {
 
 							<div className="projects-right-side">
 								<div className="projects-page-title">
-									Creative Ventures: My Projects Portfolio
+									{INFO.projects.title}
 								</div>
 
 								<div className="projects-page-subtitle">
-									Explore my diverse collection of projects,
-									each crafted with care and precision to
-									address unique challenges and deliver
-									innovative solutions. From apps enhancing
-									culinary tourism experiences to apps
-									improving safety in various environments, my
-									portfolio reflects a commitment to
-									excellence and creativity. Feel free to
-									browse through the projects below.
+									{INFO.projects.description}
 								</div>
 							</div>
 						</div>
