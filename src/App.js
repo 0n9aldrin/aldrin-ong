@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ReactGA from "react-ga4";
 import 'react-notion-x/src/styles.css'
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 import Homepage from "./pages/homepage";
 import About from "./pages/about";
@@ -24,6 +25,7 @@ function App() {
 
 	return (
 		<div className="App">
+			<SpeedInsights />
 			<Router>
 				<Routes>
 					<Route path="/" element={<Homepage />} />
