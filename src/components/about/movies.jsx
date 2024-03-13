@@ -79,7 +79,11 @@ const Movies = () => {
 							</div>
 							<p className="my-review">My Review</p>
 							<p>Rating: {selectedMovie.rating}</p>
-							<p>{selectedMovie.review}</p>
+							{selectedMovie.review
+								.split("\n")
+								.map((line, lineIndex) => (
+									<p key={lineIndex}>{line}</p>
+								))}
 						</div>
 					</div>
 				</div>

@@ -66,7 +66,7 @@ const INFO = {
 					"• Drove the ideation to launch process of a high-visibility full-stack feature within the AWS console, leading to a 20% improvement in customer usability and customer satisfaction metrics across the global userbase \n• Reduced the P90 latency of user requests by 86% through the implementation of effective multithreading \n• Leveraged Java, RESTful APIs, and AWS specific services such as Lambda, Route53, WAF, and Elastic Search for back-end development, while utilizing React, TypeScript, and CSS for front-end \n• Implemented over 20,000+ lines of efficient, scalable, and high-security code in production, ensuring 100% test coverage, thereby significantly improving user experience of over 3 million AWS customers globally",
 				logo: `${process.env.PUBLIC_URL}/work/aws.png`,
 				image: `${process.env.PUBLIC_URL}/work/aws.jpg`,
-				location: "Seattle, WA",
+				location: "East Palo Alto, CA",
 				url: "aws.amazon.com/",
 				skills: [
 					"React",
@@ -228,8 +228,8 @@ const INFO = {
 			image: `${process.env.PUBLIC_URL}/movies/name.jpg`,
 			description:
 				"High schoolers Mitsuha and Taki are complete strangers living separate lives. But one night, they suddenly switch places. Mitsuha wakes up in Taki’s body, and he in hers. This bizarre occurrence continues to happen randomly, and the two must adjust their lives around each other.",
-			rating: "4/5",
-			review: "I loved this movie. I watched it when it came out and had to watch it another time. The complexity of the movie is what makes it so excellent. There were times when I was confused on what was going on but that was the beauty of it.",
+			rating: "8.8/10",
+			review: "I absolutely adored 'Your Name.' From the moment I started watching it, I was captivated by its beauty and depth. The film seamlessly blends elements of romance, fantasy, and drama, creating an unforgettable experience that left me wanting more. \n What's truly interesting is its unique take on the concept of body swapping. The way the characters, Taki and Mitsuha, navigate each other's lives, learning about each other in the process, is both heartwarming and thought-provoking. The film beautifully explores themes of connection, destiny, and the power of love across time and space.",
 			tagline: "君の名は。",
 			director: "Makoto Shinkai",
 		},
@@ -240,7 +240,7 @@ const INFO = {
 			description:
 				"An aging Chinese immigrant is swept up in an insane adventure, where she alone can save what’s important to her by connecting with the lives she could have led in other universes.",
 			rating: "4/5",
-			review: "I loved this movie. I watched it when it came out and had to watch it another time. The complexity of the movie is what makes it so excellent. There were times when I was confused on what was going on but that was the beauty of it.",
+			review: "I was completely blown away by 'Everything Everywhere All at Once.' From the very start, I found myself utterly engrossed in its whirlwind of storytelling. The film effortlessly juggles multiple genres, seamlessly blending elements of comedy, drama, science fiction, and action into a cinematic experience unlike any other. Each scene unfolds with such unpredictability and creativity that I couldn't help but be swept along for the ride. \n What truly sets 'Everything Everywhere All at Once' apart is its exploration of identity and the multiverse. Through the protagonist's journey, the film delves into themes of self-discovery, family dynamics, and the infinite possibilities of existence. It's a rollercoaster of emotions, filled with moments of laughter, tears, and profound reflection.",
 			tagline: "THE UNIVERSE IS SO MUCH BIGGER THAN YOU REALIZE.",
 			director: "Daniel Scheinert",
 		},
