@@ -25,7 +25,6 @@ function App() {
 
 	return (
 		<div className="App">
-			<SpeedInsights />
 			<Router>
 				<Routes>
 					<Route path="/" element={<Homepage />} />
@@ -38,6 +37,7 @@ function App() {
 					<Route path="*" element={<Notfound />} />
 				</Routes>
 			</Router>
+			<SpeedInsights />
 		</div>
 	);
 }
