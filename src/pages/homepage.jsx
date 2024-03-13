@@ -9,7 +9,7 @@ import {
 	faLinkedin,
 	faMedium,
 } from "@fortawesome/free-brands-svg-icons";
-import { SpeedInsights } from "@vercel/speed-insights/next";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 import Logo from "../components/common/logo";
 import Footer from "../components/common/footer";
