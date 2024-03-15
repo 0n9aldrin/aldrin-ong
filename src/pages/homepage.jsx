@@ -9,7 +9,6 @@ import {
 	faLinkedin,
 	faMedium,
 } from "@fortawesome/free-brands-svg-icons";
-// import { SpeedInsights } from "@vercel/speed-insights/react";
 
 import Logo from "../components/common/logo";
 import Footer from "../components/common/footer";
@@ -109,7 +108,6 @@ const Homepage = () => {
 					</div>
 
 					<div className="homepage-container">
-						{/* <SpeedInsights /> */}
 						<h1 className="title homepage-title">
 							<TypedComponent strings={INFO.homepage.titles} />
 						</h1>
