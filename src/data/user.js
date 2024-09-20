@@ -56,6 +56,7 @@ const INFO = {
 			"Discover the path that took me from a curious kid mesmerized by Flutter videos in my room, to a hands-on internship at AWS. Dive into the details by tapping on the bubbles below!",
 		items: [
 			{
+				id: 1,
 				title: "Amazon Web Services",
 				role: "Software Development Engineer Intern (AI Focus)",
 				date: "May 2024 - Aug 2024",
@@ -80,6 +81,7 @@ const INFO = {
 				],
 			},
 			{
+				id: 2,
 				title: "Amazon Web Services",
 				role: "Software Development Engineer Intern",
 				date: "May 2023 - Aug 2023",
@@ -103,6 +105,7 @@ const INFO = {
 				],
 			},
 			{
+				id: 3,
 				title: "Jetzy",
 				role: "Lead Product Manager",
 				date: "May 2022 - Dec 2022",
@@ -125,6 +128,7 @@ const INFO = {
 				],
 			},
 			{
+				id: 4,
 				title: "Faire",
 				role: "Project Manager",
 				date: "Jan 2023 - May 2023",
@@ -146,6 +150,7 @@ const INFO = {
 				],
 			},
 			{
+				id: 5,
 				title: "UC Berkeley",
 				role: "Customer Service Representative",
 				date: "May 2022 - Present",
@@ -166,6 +171,7 @@ const INFO = {
 				],
 			},
 			{
+				id: 6,
 				title: "Trainme",
 				role: "Co-Founder & CTO",
 				date: "Jun 2019 - Jan 2021",
@@ -181,6 +187,7 @@ const INFO = {
 				skills: ["Android Studio", "PHP", "Firebase"],
 			},
 			{
+				id: 7,
 				title: "Ice House",
 				role: "Junior Software Engineer",
 				date: "Jun 2020 - July 2020",
@@ -202,6 +209,7 @@ const INFO = {
 				],
 			},
 			{
+				id: 8,
 				title: "Volume Up!",
 				role: "VP of Technology",
 				date: "Sep 2019 - Jun 2021",
@@ -222,6 +230,7 @@ const INFO = {
 				],
 			},
 			{
+				id: 9,
 				title: "Gojek",
 				role: "Product Manager/Business Analyst",
 				date: "May 2019 - Jul 2019",

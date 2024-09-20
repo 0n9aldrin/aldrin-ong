@@ -25,19 +25,19 @@ const Works = () => {
 		<div className="works">
 			{INFO.work.items
 				.filter((workItem) =>
-					["Amazon Web Services", "Jetzy", "Trainme"].includes(
-						workItem.title
+					[1, 2, 3, 6].includes(
+						workItem.id
 					)
 				)
 				.map((workItem) => (
 					<div key={workItem.title}>
 						<div
 							className={`work ${
-								selectedWork === workItem.title
+								selectedWork === workItem.id
 									? "active-work"
 									: ""
 							}`}
-							onClick={() => toggleWork(workItem.title)}
+							onClick={() => toggleWork(workItem.id)}
 						>
 							<div className="work-title-duration">
 								<div className="work-title">{`${workItem.role} @ ${workItem.title}`}</div>
