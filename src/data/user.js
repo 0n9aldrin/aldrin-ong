@@ -229,7 +229,7 @@ const INFO = {
 			description:
 				"High schoolers Mitsuha and Taki are complete strangers living separate lives. But one night, they suddenly switch places. Mitsuha wakes up in Taki’s body, and he in hers. This bizarre occurrence continues to happen randomly, and the two must adjust their lives around each other.",
 			rating: "8.8/10",
-			review: "I absolutely adored 'Your Name.' From the moment I started watching it, I was captivated by its beauty and depth. The film seamlessly blends elements of romance, fantasy, and drama, creating an unforgettable experience that left me wanting more. \n What's truly interesting is its unique take on the concept of body swapping. The way the characters, Taki and Mitsuha, navigate each other's lives, learning about each other in the process, is both heartwarming and thought-provoking. The film beautifully explores themes of connection, destiny, and the power of love across time and space.",
+			review: "I absolutely adored 'Your Name.' From the moment I started watching it, I was captivated by its beauty and depth. The film seamlessly blends elements of romance, fantasy, and drama, creating an unforgettable experience that left me wanting more. \n What's truly interesting is its unique take on the concept of body swapping. The animation is breathtaking and the movie puts a unique spin on body-swapping, which is quite a common plot.",
 			tagline: "君の名は。",
 			director: "Makoto Shinkai",
 		},
@@ -240,7 +240,7 @@ const INFO = {
 			description:
 				"An aging Chinese immigrant is swept up in an insane adventure, where she alone can save what’s important to her by connecting with the lives she could have led in other universes.",
 			rating: "4/5",
-			review: "I was completely blown away by 'Everything Everywhere All at Once.' From the very start, I found myself utterly engrossed in its whirlwind of storytelling. The film effortlessly juggles multiple genres, seamlessly blending elements of comedy, drama, science fiction, and action into a cinematic experience unlike any other. Each scene unfolds with such unpredictability and creativity that I couldn't help but be swept along for the ride. \n What truly sets 'Everything Everywhere All at Once' apart is its exploration of identity and the multiverse. Through the protagonist's journey, the film delves into themes of self-discovery, family dynamics, and the infinite possibilities of existence. It's a rollercoaster of emotions, filled with moments of laughter, tears, and profound reflection.",
+			review: "I could never have imagined a movie like this. It was so unique and different from anything I've ever seen. The movie was so complex and intricate that I had to watch it multiple times to fully understand it. The amalgamation of comedy, action, drama was simply refreshing. As someone with asian parents and from a more traditional asian background, I could definitely relate to the protagonist and her struggles.",
 			tagline: "THE UNIVERSE IS SO MUCH BIGGER THAN YOU REALIZE.",
 			director: "Daniel Scheinert",
 		},
@@ -251,7 +251,7 @@ const INFO = {
 			description:
 				"After being coerced into working for a crime boss, a young getaway driver finds himself taking part in a heist doomed to fail.",
 			rating: "4/5",
-			review: "I loved this movie. I watched it when it came out and had to watch it another time. The complexity of the movie is what makes it so excellent. There were times when I was confused on what was going on but that was the beauty of it.",
+			review: "I generally like romcoms and dramas but this movie was an exception. The movie was so fast-paced and action-packed that I was on the edge of my seat the entire time. The music was so well integrated into the movie that it felt like the music was a character itself. That is something you have to give credit to Edgar Wright for.",
 			tagline: "ALL YOU NEED IS ONE KILLER TRACK.",
 			director: "Edgar Wright",
 		},
@@ -262,7 +262,7 @@ const INFO = {
 			description:
 				"The defense and the prosecution have rested and the jury is filing into the jury room to decide if a young Spanish-American is guilty or innocent of murdering his father. What begins as an open and shut case soon becomes a mini-drama of each of the jurors’ prejudices and preconceptions about the trial, the accused, and each other.",
 			rating: "4/5",
-			review: "I loved this movie. I watched it when it came out and had to watch it another time. The complexity of the movie is what makes it so excellent. There were times when I was confused on what was going on but that was the beauty of it.",
+			review: "A classic that I think about from time to time. This movie taught me that perspectives can change everything. Everyone has their own biases and it's important to understand that. The way Juror 8 was able to change the minds of the other jurors one by one through various methods and arguments inspires me till this day. The scene where Juror 8 accepts the gum from Juror 7 is one of my favorite scenes. It shows that even the smallest of gestures can have a big impact.",
 			tagline: "LIFE IS IN THEIR HANDS. DEATH IS ON THEIR MINDS.",
 			director: "Sidney Lumet",
 		},
@@ -273,7 +273,7 @@ const INFO = {
 			description:
 				"Ashitaka, a prince of the disappearing Emishi people, is cursed by a demonized boar god and must journey to the west to find a cure. Along the way, he encounters San, a young human woman fighting to protect the forest, and Lady Eboshi, who is trying to destroy it. Ashitaka must find a way to bring balance to this conflict.",
 			rating: "4/5",
-			review: "I loved this movie. I watched it when it came out and had to watch it another time. The complexity of the movie is what makes it so excellent. There were times when I was confused on what was going on but that was the beauty of it.",
+			review: "I love all Studio Ghibli movies but this was one of the first that I watched. I love how all his movies have a deeper meaning and a moral to the story. I generally care about the environment and it was amazing how Miyazaki portrayed the constant conflict between nature and man-kind. The animation is beautiful and the story is so well written. The movie is a perfect blend of action, drama, and fantasy.",
 			tagline:
 				"THE FATE OF THE WORLD RESTS ON THE COURAGE OF ONE WARRIOR.",
 			director: "Hayao Miyazaki",
@@ -285,7 +285,7 @@ const INFO = {
 			description:
 				"When Coraline moves to an old house, she feels bored and neglected by her parents. She finds a hidden door with a bricked up passage. During the night, she crosses the passage and finds a parallel world where everybody has buttons instead of eyes, with caring parents and all her dreams coming true. When the Other Mother invites Coraline to stay in her world forever, the girl refuses and finds that the alternate reality where she is trapped is only a trick to lure her.",
 			rating: "4/5",
-			review: "I loved this movie. I watched it when it came out and had to watch it another time. The complexity of the movie is what makes it so excellent. There were times when I was confused on what was going on but that was the beauty of it.",
+			review: "A movie that haunts me till this day. The grass is always greener on the other side.",
 			tagline: "BE CAREFUL WHAT YOU WISH FOR.",
 			director: "Brad Bird",
 		},
@@ -307,7 +307,7 @@ const INFO = {
 			description:
 				"Truman Burbank is the star of The Truman Show, a 24-hour-a-day reality TV show that broadcasts every aspect of his life without his knowledge. His entire life has been an unending soap opera for consumption by the rest of the world. And everyone he knows, including his wife and his best friend is really an actor, paid to be part of his life.",
 			rating: "4/5",
-			review: "I loved this movie. I watched it when it came out and had to watch it another time. The complexity of the movie is what makes it so excellent. There were times when I was confused on what was going on but that was the beauty of it.",
+			review: "I like movies that sort of make you question reality and this movie did just that. Although it is a little self-centered, I sometimes wonder if I'm part of The Aldrin Show. This kind of realtes to topics about simulation and reality that I find interesting.",
 			tagline: "ON THE AIR. UNAWARE.",
 			director: "Peter Weir",
 		},
@@ -318,7 +318,7 @@ const INFO = {
 			description:
 				"A young girl, Chihiro, becomes trapped in a strange new world of spirits. When her parents undergo a mysterious transformation, she must call upon the courage she never knew she had to free her family.",
 			rating: "4/5",
-			review: "I loved this movie. I watched it when it came out and had to watch it another time. The complexity of the movie is what makes it so excellent. There were times when I was confused on what was going on but that was the beauty of it.",
+			review: "The scene where Chihiro's parents turn into pigs will always be ingrained in my memory. Another Miayaaki masterpiece.",
 			tagline: "千と千尋の神隠し",
 			director: "Hayao Miyazaki",
 		},
