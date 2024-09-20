@@ -57,6 +57,30 @@ const INFO = {
 		items: [
 			{
 				title: "Amazon Web Services",
+				role: "Software Development Engineer Intern (AI Focus)",
+				date: "May 2024 - Aug 2024",
+				description:
+					"Led the introduction of GenAI to the AWS search engine, leveraging NLP, RAG, and ML models to improve relevancy accuracy for longer queries by 70%, and optimized the development pipeline by 25%",
+				bullet: "• Launched high-visibility AWS feature improving customer usability by 20%\n• Reduced P90 user request latency by 86% through effective multithreading\n• Deployed 20,000+ lines of secure code with 100% test coverage, benefiting 3 million+ users",
+				longDescription:
+					"• Propelled the team’s cutting-edge initiative of introducing GenAI to the AWS search engine (AKA Semantic Search), leveraging NLP, RAG, and ML models, improving relevancy accuracy for longer queries by 70% \n• Developed an AI-powered test playground for semantic search, improving ML retrieval accuracy by up to 14% \n• Optimized production pipeline, improving development time by 30% and synchronization efficiency by 25% \n• Leveraged Java, RESTful APIs, and AWS services (Lambda, WAF, SNS, SQS, S3, and Elastic Search) for back-end development, while utilizing SageMaker and Python for ML deployment",
+				logo: `${process.env.PUBLIC_URL}/work/aws.png`,
+				image: `${process.env.PUBLIC_URL}/work/aws2024.jpg`,
+				location: "East Palo Alto, CA",
+				url: "aws.amazon.com/",
+				skills: [
+					"Java",
+					"Python",
+					"AWS",
+					"Lambda",
+					"OpenSearch",
+					"S3",
+					"SageMaker",
+					"Bedrock",
+				],
+			},
+			{
+				title: "Amazon Web Services",
 				role: "Software Development Engineer Intern",
 				date: "May 2023 - Aug 2023",
 				description:
